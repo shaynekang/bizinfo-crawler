@@ -23,8 +23,8 @@ class Board
       maker.items.do_sort = true
       @articles.each do |article|
         maker.items.new_item do |item|
-          # item.link = "http://www.ruby-lang.org/en/news/2010/12/25/ruby-1-9-2-p136-is-released/"
           item.title = "[#{article[:author]}]#{article[:title]}"
+          item.link = "http://www.bizinfo.go.kr#{article[:link]}"
 #          item.updated = Date.parse(article[:released_at])
         end
       end

@@ -17,13 +17,14 @@ describe Board do
 
   describe "#to_rss" do
     it "should return rss format of board info" do
-      board.add_article(title: "First Article", author: "John Doe", released_at: "2012.6.15")
+      board.add_article(title: "First Article", author: "John Doe", released_at: "2012.6.15", link: "/jojo")
       feed = RSS::Parser.parse(board.to_rss)
       feed.channel.title.should == "비즈인포 창업/벤처 RSS"
       feed.channel.description.should == "비즈인포 창업/벤처 게시판의 RSS리스트입니다."
       feed.items.count.should == 1
       feed.items.each do |item|
         item.title.should == "[John Doe]First Article"
+        item.link.should == "http://www.bizinfo.go.kr/jojo"
         # item.released_at.should == "2012.6.15"
       end
     end
@@ -31,7 +32,7 @@ describe Board do
 
   describe "#save" do
     it "should save previous article" do
-      board.add_article(title: "First Article", author: "John Doe", released_at: "2012.6.15")
+      board.add_article(title: "First Article", author: "John Doe", released_at: "2012.6.15", link: "/jojo")
       board.save_xml("venture.xml")
 
       another = Board.new

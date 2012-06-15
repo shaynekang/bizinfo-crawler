@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articles>
+  <article>
+    <title>First Article</title>
+    <author>John Doe</author>
+    <released_at>2012.6.15</released_at>
+  </article>
+</articles>

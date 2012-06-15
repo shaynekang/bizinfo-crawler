@@ -25,7 +25,7 @@ describe Board do
       feed.items.each do |item|
         item.title.should == "[John Doe]First Article"
         item.link.should == "http://www.bizinfo.go.kr/jojo"
-        # item.released_at.should == "2012.6.15"
+        item.date.should == Time.parse("2012.6.15")
       end
     end
   end

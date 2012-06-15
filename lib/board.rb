@@ -25,7 +25,7 @@ class Board
         maker.items.new_item do |item|
           item.title = "[#{article[:author]}]#{article[:title]}"
           item.link = "http://www.bizinfo.go.kr#{article[:link]}"
-#          item.updated = Date.parse(article[:released_at])
+          item.updated = article[:released_at]
         end
       end
     end.to_s

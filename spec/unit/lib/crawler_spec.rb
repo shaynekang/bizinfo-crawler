@@ -10,18 +10,16 @@ describe Crawler do
     @crawler ||= Crawler.new
   end
 
-  def article_list
-    unless @data
-      @data = ""
-      File.open('spec/fixture/venture.xml', "r").each_line {|line| @data += line}
-    end
-    @data
+  def file(filename)
+    data = ""
+    File.open(filename, "r").each_line {|line| data += line}
+    data
   end
 
   describe "#crawl" do
     it "should crawl article list" do
       crawler.crawl(board, 'spec/fixture/venture.html')
-      board.to_rss.should == article_list
+      board.to_rss.should == file('spec/fixture/venture.xml')
     end
 
     it "shouldn't crawl if file name is invalid" do

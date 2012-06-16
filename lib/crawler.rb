@@ -2,7 +2,6 @@
 require 'nokogiri'
 require 'open-uri'
 
-require './lib/board'
 require './lib/article'
 
 class Crawler

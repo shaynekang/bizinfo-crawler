@@ -1,5 +1,7 @@
 require 'spec_helper'
 require 'crawler'
+require 'board'
+require 'article'
 require 'rss_builder'
 
 describe Crawler do

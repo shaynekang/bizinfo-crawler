@@ -1,8 +1,6 @@
 # encoding: UTF-8
-
 require 'spec_helper'
 require 'article'
-
 
 describe Article do
   it "should create a new instance" do

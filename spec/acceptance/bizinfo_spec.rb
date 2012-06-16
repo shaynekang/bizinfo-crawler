@@ -1,12 +1,8 @@
 # encoding: UTF-8
 require 'spec_helper'
-require "#{File.dirname(__FILE__)}/../../runner"
 require 'rack/test'
 
-ENV['RACK_ENV'] = 'test'
-
-require 'board'
-require 'crawler'
+require "runner"
 
 describe 'BizInfo Crawler' do
   include Rack::Test::Methods

@@ -12,9 +12,7 @@ describe Crawler do
   end
 
   def file(filename)
-    data = ""
-    File.open(filename, "r").each_line {|line| data += line}
-    data
+    File.open(filename, "r").map{|line| line}.join
   end
 
   describe "#crawl" do

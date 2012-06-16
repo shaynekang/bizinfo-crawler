@@ -11,7 +11,12 @@ describe Board do
   describe "#add_article" do
     it "should add article of board" do
       expect do
-        board.add_article(Article.new(title: "First Article", author: "John Doe", released_at: "2012.6.15"))
+        article = Article.new({
+          title: "First Article",
+          author: "John Doe",
+          released_at: "2012.6.15"
+        })
+        board.add_article(article)
       end.to change{ board.articles.count }.from(0).to(1)
     end
   end

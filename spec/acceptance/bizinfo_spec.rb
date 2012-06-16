@@ -14,9 +14,13 @@ describe 'BizInfo Crawler' do
     Sinatra::Application
   end
 
-  it "should return rss bizinfo's venture page." do
+  def file(filename)
+    File.open(filename, "r").map{|line| line}.join
+  end
+
+  it "should response rss page of bizinfo's venture board." do
     URLInfo.stub(:get).with('venture') { 'spec/fixture/venture.html' }
     get '/venture'
-    last_response.body.should be_include("[대전] 대학생ㆍ청년창업 500 프로젝트사업")
+    last_response.body.should == file('spec/fixture/venture.xml')
   end
 end

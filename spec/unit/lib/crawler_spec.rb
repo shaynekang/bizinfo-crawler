@@ -1,4 +1,6 @@
+# encoding: UTF-8
 require 'spec_helper'
+
 require 'crawler'
 require 'board'
 require 'article'

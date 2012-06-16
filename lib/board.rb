@@ -30,31 +30,4 @@ class Board
       end
     end.to_s
   end
-
-  def save_xml(filename)
-    builder = Nokogiri::XML::Builder.new(:encoding => 'UTF-8') do |xml|
-      xml.articles do
-        @articles.each do |article|
-          xml.article do
-            xml.title article[:title]
-            xml.author article[:author]
-            xml.released_at article[:released_at]
-          end
-        end
-      end
-    end
-    File.open(filename, 'w') {|f| f.write(builder.to_xml) }
-  end
-
-  def load_xml(filename)
-    @doc = Nokogiri::XML(open(filename), nil, 'UTF-8')
-    @doc.xpath('//article').each do |info|
-      article = {
-        title: info.xpath('title').first.content,
-        author: info.xpath('author').first.content,
-        released_at: info.xpath('released_at').first.content,
-      }
-      add_article(article)
-    end
-  end
 end

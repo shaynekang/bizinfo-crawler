@@ -29,16 +29,5 @@ describe Board do
       end
     end
   end
-
-  describe "#save" do
-    it "should save previous article" do
-      board.add_article(title: "First Article", author: "John Doe", released_at: "2012.6.15", link: "/jojo")
-      board.save_xml("venture.xml")
-
-      another = Board.new
-      another.load_xml("venture.xml")
-      another.articles.count.should == 1
-    end
-  end
 end
 

@@ -1,5 +1,6 @@
 require 'spec_helper'
 require 'crawler'
+require 'rss_builder'
 
 describe Crawler do
   def board
@@ -19,7 +20,7 @@ describe Crawler do
   describe "#crawl" do
     it "should crawl article list" do
       crawler.crawl(board, 'spec/fixture/venture.html')
-      board.to_rss.should == file('spec/fixture/venture.xml')
+      RSSBuilder.build(board).should == file('spec/fixture/venture.xml')
     end
 
     it "shouldn't crawl if file name is invalid" do

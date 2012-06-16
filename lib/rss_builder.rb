@@ -15,9 +15,9 @@ class RSSBuilder
         maker.items.do_sort = true
         board.articles.each do |article|
           maker.items.new_item do |item|
-            item.title = "[#{article[:author]}]#{article[:title]}"
-            item.link = "http://www.bizinfo.go.kr#{article[:link]}"
-            item.updated = article[:released_at]
+            item.title = "[#{article.author}]#{article.title}"
+            item.link = "http://www.bizinfo.go.kr#{article.link}"
+            item.updated = article.released_at
           end
         end
       end.to_s

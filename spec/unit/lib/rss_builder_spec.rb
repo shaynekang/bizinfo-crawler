@@ -1,6 +1,7 @@
 # encoding: UTF-8
 require 'spec_helper'
 require 'board'
+require 'article'
 require 'rss_builder'
 
 describe RSSBuilder do
@@ -10,7 +11,14 @@ describe RSSBuilder do
 
   describe "##build" do
     it "should return rss format of board information" do
-      board.add_article(title: "First Article", author: "John Doe", released_at: "2012.6.15", link: "/jojo")
+      article = Article.new({
+        title: "First Article",
+        author: "John Doe",
+        released_at: "2012.6.15",
+        link: "/jojo"
+      })
+
+      board.add_article(article)
       rss = RSSBuilder.build(board)
 
       feed = RSS::Parser.parse(rss)

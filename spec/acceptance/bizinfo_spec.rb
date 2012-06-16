@@ -15,7 +15,7 @@ describe 'BizInfo Crawler' do
   end
 
   it "should return rss bizinfo's venture page." do
-    RSSInfo.stub(:get).with('venture') { 'spec/fixture/list.html' }
+    URLInfo.stub(:get).with('venture') { 'spec/fixture/list.html' }
     get '/venture'
     last_response.body.should be_include("[대전] 대학생ㆍ청년창업 500 프로젝트사업")
   end

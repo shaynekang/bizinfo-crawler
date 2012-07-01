@@ -12,6 +12,8 @@ describe RSSBuilder do
 
   describe "##build" do
     it "should return rss format of board information" do
+      board.url = "http://www.bizinfo.go.kr"
+
       article = Article.new({
         title: "First Article",
         author: "John Doe",

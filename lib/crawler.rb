@@ -8,7 +8,7 @@ class Crawler
   def crawl(board, filename)
     list = Nokogiri::HTML(open(filename))
     list.css("table.tbl tbody tr").each_with_index do |link, index|
-      return if index > 10
+      return if index > 5
 
       table_data = link.css('td')
       link = table_data.css('a').first['href']

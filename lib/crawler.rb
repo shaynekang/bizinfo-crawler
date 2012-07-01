@@ -7,7 +7,9 @@ require './lib/article'
 class Crawler
   def crawl(board, filename)
     list = Nokogiri::HTML(open(filename))
-    list.css("table.tbl tbody tr").map do |link|
+    list.css("table.tbl tbody tr").each_with_index do |link, index|
+      return if index > 10
+
       table_data = link.css('td')
       link = table_data.css('a').first['href']
       other_informations = table_data.map { |info| info.content.strip }

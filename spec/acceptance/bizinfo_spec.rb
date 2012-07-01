@@ -16,6 +16,7 @@ describe 'BizInfo Crawler' do
 
   it "should response rss page of bizinfo's venture board." do
     URLInfo.stub(:get).with('venture') { 'spec/fixture/venture.html' }
+    Board.any_instance.stub(:url) { "" }
     get '/venture'
     last_response.body.should == file('spec/fixture/venture.xml')
   end

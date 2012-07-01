@@ -16,6 +16,7 @@ describe RSSBuilder do
 
       article = Article.new({
         title: "First Article",
+        description: "This is the first article. Yeah~",
         author: "John Doe",
         released_at: "2012.6.15",
         link: "/jojo"
@@ -30,6 +31,7 @@ describe RSSBuilder do
       feed.items.count.should == 1
       feed.items.each do |item|
         item.title.should == "[John Doe]First Article"
+        item.description.should == "This is the first article. Yeah~"
         item.link.should == "http://www.bizinfo.go.kr/jojo"
         item.date.should == Time.parse("2012.6.15")
       end

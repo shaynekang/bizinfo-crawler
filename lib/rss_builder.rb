@@ -14,6 +14,7 @@ class RSSBuilder
         board.articles.each do |article|
           maker.items.new_item do |item|
             item.title = "[#{article.author}]#{article.title}"
+            item.description = article.description
             item.link = "#{board.url}#{article.link}"
             item.updated = article.released_at
           end

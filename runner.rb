@@ -8,6 +8,8 @@ require './lib/rss_builder'
 
 get '/venture' do
   board = Board.new
+  board.url = "http://www.bizinfo.go.kr"
+
   crawler = Crawler.new
   crawler.crawl(board, URLInfo.get('venture'))
   RSSBuilder.build(board)

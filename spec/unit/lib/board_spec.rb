@@ -9,6 +9,17 @@ describe Board do
     @board ||= Board.new
   end
 
+  describe "#url" do
+    it "should return url of board if url attribute is exist" do
+      board.url = "http://www.github.com/"
+      board.url.should == "http://www.github.com/"
+    end
+
+    it "should return blank string if url attribute isn't exist" do
+      board.url.should == ""
+    end
+  end
+
   describe "#add_article" do
     it "should add article of board" do
       expect do

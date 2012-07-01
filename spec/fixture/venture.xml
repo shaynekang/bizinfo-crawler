@@ -10,19 +10,19 @@
     <description>비즈인포 창업/벤처 게시판의 RSS리스트입니다.</description>
     <item>
       <title>[대전경제통..][대전] 대학생ㆍ청년창업 500 프로젝트사업</title>
-      <link>/userPolicyInfoView.do?policyInfoSerchTO.division=1&amp;policyInfoSerchTO.searchKeyDivision=0&amp;policyInfoSerchTO.insttSe=0&amp;tnPolicyInfoVO.policyCodeId=2012daeje00000147</link>
+      <link>spec/venture_item.html</link>
       <pubDate>Thu, 14 Jun 2012 00:00:00 +0900</pubDate>
       <dc:date>2012-06-14T00:00:00+09:00</dc:date>
     </item>
     <item>
       <title>[경북테크노파크][경북] 5차년도 창업후 보육사업</title>
-      <link>/userPolicyInfoView.do?policyInfoSerchTO.division=1&amp;policyInfoSerchTO.searchKeyDivision=0&amp;policyInfoSerchTO.insttSe=0&amp;tnPolicyInfoVO.policyCodeId=2012gyeon00000133</link>
+      <link>spec/venture_item.html</link>
       <pubDate>Wed, 13 Jun 2012 00:00:00 +0900</pubDate>
       <dc:date>2012-06-13T00:00:00+09:00</dc:date>
     </item>
     <item>
       <title>[소상공인진흥원]2012년 신사업 비즈니스모델 개발 및 사업화 지원..</title>
-      <link>/userPolicyInfoView.do?policyInfoSerchTO.division=1&amp;policyInfoSerchTO.searchKeyDivision=0&amp;policyInfoSerchTO.insttSe=0&amp;tnPolicyInfoVO.policyCodeId=2012smbaa00000704</link>
+      <link>spec/venture_item.html</link>
       <pubDate>Thu, 07 Jun 2012 00:00:00 +0900</pubDate>
       <dc:date>2012-06-07T00:00:00+09:00</dc:date>
     </item>

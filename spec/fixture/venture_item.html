@@ -1,0 +1,2202 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="Description" content="초기기업의 사업화 성공률을 제고하기 위하여 엔젤투자 및 벤처캐피탈(VentureCapital)의 투자참여와 더불어 1:1 멘토링을 조건으로 하여 기술개발비를 지원하는 사업입니다.&nbsp; ☞ 중소기업기본법 제 2조의 규정에 의한&nbsp; 창업 3년 이내 중소기업(법인)을 지원&nbsp; ☞&nbsp;엔젤투자 및 벤처캐피탈(Venture Capital)의 투자참여와&nbsp;더불어 1:1 멘토링을 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 조건으로 기술개발비를 지원&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 총 사업비의 75%이내에서 최대 1년, 최대 2억원을 지원해 드립니다."/>
+
+<title>2012년도 투자연계 멘토링 초기기업 기술개발사업 시행계획  : 중소기업을 위한 종합정보서비스-비즈인포</title>
+
+<link rel="stylesheet" type="text/css" href="/css/layout/layout.css" />
+<link rel="stylesheet" type="text/css" href="/spi/css/header2011.css" />
+<link rel="stylesheet" type="text/css" href="/spi/css/vozzang2011.css" />
+<!--[if IE 6]>
+  <link type="text/css" rel="stylesheet" href="/spi/css/vozzang_ie6.css" />
+<![endif]-->
+
+<script type="text/javascript" src="/spi/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="/spi/js/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript" src="/spi/js/vozzang.js"></script>
+<script type="text/javascript" src="/spi/js/menu.js"></script>
+<script type="text/javascript" src="/spi/js/common_login.js"></script>
+<script type="text/javascript" src="/spi/js/commonstring.js"></script>
+<script type="text/javascript" src="/spi/js/commonSelectBox.js"></script>
+<script type="text/javascript" src="/spi/js/commonutil.js"></script>
+<script type="text/javascript" src="/spi/js/commondate.js"></script>
+<script type="text/javascript" src="/spi/js/commonWindowopen.js"></script>
+<script type="text/javascript" src="/spi/js/AC_RunActiveContent.js"></script>
+<script type="text/javascript" src="/spi/js/div.js"></script>
+
+<script type="text/javascript" >
+//<![CDATA[
+var popKeyword;
+
+
+//function refresh(){
+//  thisForm.action="/index.jsp";
+//  thisForm.submit();
+//}
+
+function handlePress() {
+  if(event.keyCode == 13) {
+    onSearch();
+  }
+}
+
+function handleclick() {
+
+  var form = document.wnsearch;
+
+  form.query.value = "";
+
+  form.query.style.color="black";
+}
+
+
+function onSearch() {
+
+  var win = window.open('', 'totalsearch',"height=840,width=900,toolbar=no,menubar=no,scrollbars=yes,resizable=yes,location=no,directories=no,status=no");
+  var form = document.wnsearch;
+
+  form.target = 'totalsearch';
+  //if (document.getElementById('collection').value == 'naver') {
+  //  form.action = '/spi/jsp/spt/wisenut/naver.jsp';
+  //} else {
+    form.action = '/latelySearch.do';
+  //}
+
+  form.submit();
+
+}
+
+function popularSearch(query) {
+  var frmS = document.wnsearch;
+  frmS.query.value = query
+  onSearch(0);
+}
+
+function go_selPage() {
+  var f = document.sel_page;
+  var f1 = document.sel_page_exec;
+
+  //alert(f.link[f.link.selectedIndex].value);
+
+  if (f.link[f.link.selectedIndex].value == 'js_gowebhard()') {
+    js_gowebhard();
+  } else if (f.link[f.link.selectedIndex].value == 'js_webhardRegiest()') {
+    js_webhardRegiest();
+  } else if (f.link[f.link.selectedIndex].value == 'blogadmin_popup()') {
+    blogadmin_popup();
+  } else {
+    f1.action = f.link[f.link.selectedIndex].value;
+    f1.submit();
+  }
+
+  return false;
+}
+
+function startPage(Obj,urlStr){
+    if (document.all && window.external){
+        Obj.style.behavior='url(#default#homepage)';
+        Obj.setHomePage(urlStr);
+    } else {
+
+    }
+}
+//]]>
+</script>
+<link rel="shortcut icon" href="/spi/img/main/url_icon.ico"></link>
+
+<script type="text/javascript" src="/spi/js/formcheck.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+
+var thisForm;
+//스크랩
+function scrapThis(){
+  sendData = "tnMyScrapVO.scrapSe=policy&tnMyScrapVO.scrapId="+thisForm["tnPolicyInfoVO.policyCodeId"].value;
+  var xmlHttp = getObjXMLHTTP();
+  xmlHttp.open("POST","/myScrapRegister.do", true);
+  xmlHttp.onreadystatechange = function(){
+    if(xmlHttp.readyState == 4){
+
+      if(xmlHttp.status == 200){
+        var xmlHttpVals = xmlHttp.responseText;
+
+        xmlHttpVals = xmlHttpVals.split("\t");
+        if(xmlHttpVals[0] == "로그인을 하셔야 이용이 가능합니다 \n 로그인 화면으로 이동 하시겠습니까 ?"){
+          if(confirm("로그인을 하셔야 이용이 가능합니다 \n 로그인 화면으로 이동 하시겠습니까 ?")){
+            thisForm.action = "/loginPop.do";
+            wwidth =465;
+            wheight = 280;
+            var wleft = (screen.width-wwidth)/2;
+            var wtop = (screen.height-wheight)/2;
+            window.open(thisForm.action, 'rawWin', 'resizable=no, scrollbars=yes, status=no, width='+wwidth+', height='+wheight+', top='+wtop+',left='+wleft + '');
+          }
+        }
+        else{
+          alert(xmlHttpVals[0]);
+        }
+      }
+      else{
+
+        var exceptShow = "CODE : " + xmlHttp.status;
+        exceptShow += ", Error...";
+        alert(exceptShow);
+      }
+    }
+  };
+
+  //alert('user=='+form1.loginuser.value);
+  if(document.form1.loginuser.value != null && document.form1.loginuser.value.length > 0 && document.form1.scrapMemoYN.value == 'N') {
+    // 메모입력 (새창으로)
+    var win_url = "/spi/jsp/common/win_scrapMemo.jsp";
+    wwidth =330;
+    wheight = 175;
+    var wleft = (screen.width-wwidth)/2;
+    var wtop = (screen.height-wheight)/2;
+    window.open(win_url, 'scrapWin', 'resizable=no, scrollbars=no, status=no, width='+wwidth+', height='+wheight+', top='+wtop+',left='+wleft + '');
+  }
+  else {
+    //alert('scrapMemo ==> ' + form1.scrapMemo.value);
+    var conType = "application/x-www-form-urlencoded; charset=UTF-8";
+    xmlHttp.setRequestHeader("Content-Type", conType);
+    sendData = sendData + "&tnMyScrapVO.scrapMemo="+document.form1.scrapMemo.value;
+    xmlHttp.send(sendData);
+  }
+
+}
+
+//파일 다운
+function callFileDown(path, fileName,realfilenm) {
+  thisForm = document.userPolicyInfoListForm;
+  thisForm.action = "/download?path="+path+"&filename="+fileName+"&realfilenm="+realfilenm;
+  thisForm.submit();
+}
+
+//목록
+function go_List(division) {
+  //alert(thisForm);
+  thisForm = document.userPolicyInfoListForm;
+  if(division==4){
+    thisForm.action="/userPolicyInfoList.do?policyInfoSerchTO.division=4";
+  } else {
+    thisForm.action="/userPolicyInfoList.do";
+  }
+  thisForm.submit();
+}
+
+//온라인접수 목록
+function go_online_List(){
+  thisForm.action="/onlineList.do";
+  thisForm.submit();
+}
+
+function refresh(){
+  thisForm.action= "/userPolicyInfoView.do";
+  thisForm.submit();
+}
+
+// 서식정보 등록
+function entrpRceptRegist(policyNm, policyCodeId, rceptInsttId, itemId, policyCodeIdSn, rceptInsttChargerId, rceptInsttChargerNm, login_id) {
+
+  if(login_id == "") {
+    alert("로그인후에 이용이 가능합니다.");
+    var pUrl = "/loginPop.do";
+    wwidth =465;
+     wheight = 250;
+     var wleft = (screen.width-wwidth)/2;
+     var wtop = (screen.height-wheight)/2;
+     window.open(pUrl, 'rawWin', 'resizable=no, scrollbars=yes, status=no, width='+wwidth+', height='+wheight+', top='+wtop+',left='+wleft + '');
+     return;
+  }
+
+  if(itemId == ""){
+    itemId = "00000";
+  }
+  thisForm.policyCodeId.value = policyCodeId;
+  thisForm.rceptInsttId.value = rceptInsttId;
+  thisForm.itemId.value = itemId;
+  thisForm.policyNm.value = policyNm;
+  thisForm.policyCodeIdSn.value = policyCodeIdSn;
+
+  thisForm.rceptInsttChargerId.value = rceptInsttChargerId;
+  thisForm.spiChargerId.value = rceptInsttChargerId;
+  thisForm.rceptInsttChargerNm.value = rceptInsttChargerNm;
+
+  thisForm.isRegistOrModify.value="registView";
+  thisForm.action = '/entrpRceptRegist.do';
+
+  var path = '';
+  var popup = null;
+  var w = 640;
+  var h = 660;
+  var s = scroll;
+  if(scroll == null)
+    s = 'yes';
+  popup = window.open( path ,'win1', 'width=' + w + ',height=' + h +',scrollbars=' + s + ',toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=no' );
+   popup.moveTo((screen.availWidth-w)/2,(screen.availHeight-h)/2);
+   popup.focus();
+   thisForm.target = 'win1';
+
+  thisForm.submit();
+}
+
+function goRegistPage(url, spiChargerId){
+  //thisForm = document.userPolicyInfoListForm;
+  //thisForm.spiChargerId.value = spiChargerId; // 담당자 아이디
+  window.open(url);
+}
+
+//신청버튼, 바로가기 깜빡이게 하기
+function doBlink() {
+  var blink = document.all.tags("BLINK");
+
+  for (var i=0; i < blink.length; i++)
+    blink[i].style.visibility = blink[i].style.visibility == "" ? "hidden" : "";
+}
+
+function startBlink() {
+  if (document.all)
+    setInterval("doBlink()",400);  // 깜빡이는 속도(높을수록 천천히 깜빡임..숫자만 바꿔~)
+}
+
+//전달하기
+function delivery(){
+  var div =document.getElementById("print_div");
+  var html =div.innerHTML;
+  var pWin=window.open('/spi/jsp/spt/deliverMail/deliverMail.jsp','deliver','toolbar=no, scrollbars=yes, width=500, height=300');
+}
+
+//주소복사
+function urlCopy(){
+  if(window.clipboardData.setData('Text', location.href)){
+    alert('해당 지원사업정보가 복사되었습니다.\n\게시판이나 메신저 창에서 Ctrl+V를 선택하여 사용하시기 바랍니다.');
+  }
+}
+
+//화면로딩시실행.
+function init(submenu) {
+  //alert(submenu);
+  thisForm = document.userPolicyInfoListForm;
+
+  if (submenu == "policy") {
+    js_submenu(1,1);
+  }
+  else if (submenu == "online"){
+    js_submenu(8,0);
+  }
+  else if (submenu == "organ"){
+    js_submenu(2,2);
+  }
+  else if (submenu == "ent"){
+    js_submenu(3,3);
+  } else if (submenu == "supportwork"){
+    js_submenu(5,0);
+  } else if (submenu == "recent"){
+    js_submenu(0,0);
+  } else if (submenu == "close"){
+    js_submenu(0,0);
+  }
+  //startBlink();
+}
+/*
+function noclicks(){
+  if(event.keyCode==116){
+    event.keyCode=2;
+    return false;
+  }else if(event.ctrlKey && (event.keyCode==78 || event.keyCode==82)){
+    return false;
+  }
+}
+
+*/
+//]]>
+//document.onkeydown=noclicks;
+//oncontextmenu="return false" onselectstart="return false" ondragstart="return false"
+</script>
+</head>
+<body >
+
+
+
+
+
+<!-- 스크랩 메모 관련 -->
+<form name="form1" action="">
+<input type="hidden" name="scrapMemo" value="" />
+<input type="hidden" name="scrapMemoYN" value="N" />
+<input type="hidden" name="loginuser" value="" />
+</form>
+
+  <!-- header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+function onSearch() {
+
+  var win = window.open('', 'totalsearch',"height=840,width=990,toolbar=no,menubar=no,scrollbars=yes,resizable=yes,location=no,directories=no,status=no");
+  var form = document.wnsearch;
+
+  form.target = 'totalsearch';
+  //if (form.collection.value == 'naver') {
+  //  form.action = '/spi/jsp/spt/wisenut/naver.jsp';
+  //} else {
+    form.action = '/latelySearch.do';//'/spi/jsp/spt/wisenut/total.jsp';
+  //}
+  form.submit();
+}
+
+
+//]]>
+</script>
+
+<div id="wrap">
+  <!-- header -->
+  <div id="header">
+    <div id="accessibility">
+        <a href="#article">본문 영역 바로가기</a>
+    </div>
+
+    <a href="http://www.smba.go.kr" class="go_smba" target="_blank" title="중소기업청 바로가기(새창열림)"><img src="/spi/img/common/btn_smba.gif" alt="중소기업청 바로가기(새창열림)" /></a>
+    <a href="#" onclick="javascript:startPage(this,'http://www.bizinfo.go.kr');return false;" class="startpage"><img src="/spi/img/common/btn_startpage.gif" alt="비즈인포를 시작페이지로" /></a>
+
+    <h2 class="hid">글로벌 메뉴목차</h2>
+    <ul class="gsm">
+      <li class="first"><a href="/index.do"><img src="/spi/img/common/btn_home.gif" width="10" height="10" alt="홈" /></a></li>
+
+      <li><a href="http://www.bizinfo.go.kr/login.do?sso=ok"><img src="/spi/img/common/btn_login.gif" width="27" height="10" alt="로그인" /></a></li>
+      <li><a href="http://www.bizinfo.go.kr/userJoinAgree.do"><img src="/spi/img/common/btn_join.gif" width="36" height="10" alt="회원가입" /></a></li>
+
+      <li><a href="/sitemap.do"><img src="/spi/img/common/btn_menuview.gif" width="53" height="10" alt="전체메뉴보기" /></a></li>
+    </ul>
+
+    <p class="logo"><a href="/index.do"><img src="/spi/img/common/logo.gif" width="148" height="38" alt="비즈인포" /></a></p>
+
+    <h2 id="q_search" class="hid">통합검색 서비스</h2>
+
+    <div id="searchWrap">
+      <form name="wnsearch" action="/latelySearch.do" method="post" onsubmit="javascript:onSearch();return false;" style="margin: 0px">
+      <fieldset>
+      <legend>통합검색 서비스 영역</legend>
+      <div class="bgWrapper_320">
+
+      <div id="selectTxt">
+          <label for="collection" class="hid">검색조건</label>
+        <select name="collection" id="collection" class="selectRe w105 h22 mb1">
+        <option value="all"  >통합검색</option>
+        <option value="issue">핫이슈</option>
+        <option value="poli">지원사업정보</option>
+        <option value="manage">경영정보</option>
+        <option value="event">행사정보</option>
+        <option value="busi">기업경영매뉴얼</option>
+<!--      <option value="cnslt">민원상담</option>-->
+        <option value="partin">참여&amp;소식</option>
+        <option value="bizconsult">지원단</option>
+        <option value="inform">관련사이트</option>
+        <option value="ia">외부정보</option>
+        <option value="naver">네이버</option>
+        </select>
+      </div>
+
+            <label for="query" class="hid">검색어</label>
+      <input type="text" name="query" id="query" class="mainSearch" title="검색어 입력" value="" />
+      <div class="sok" tabindex="0">
+        <div id="set_sugicn"><img src="/spi/img/common/icon_search_off.gif" id="sugicn" alt="자동추천기능보기" title="자동추천기능보기" /></div>
+        <div id="set_sugicnUP"><img src="/spi/img/common/icon_search_off2.gif" id="sugicnUP" alt="자동추천기능닫기" title="자동추천기능닫기" /></div>
+      </div>
+      <input type="image" src="/spi/img/common/btn_search.gif" class="btn_search" alt="검색(새창열림)" title="새창열림" />
+      <input type="hidden" name="natural" value="y" />
+      </div>
+      </fieldset>
+
+      <div id="SchSug">
+        <iframe id="hFrame" name="hFrame" title="통합검색" src="/spi/ark/ark_iframe.html" width="277" scrolling="no" frameborder="0"></iframe>
+      </div>
+      </form>
+
+      <div class="popular_search">
+      <div>
+      <strong>인기검색어</strong>
+      <div id="popular_div"><!-- &nbsp; --></div>
+      </div>
+
+      </div>
+
+      <script language="javascript" type="text/javascript" src="/spi/js/ajax/prototype.js"></script>
+      <script type="text/javascript">
+      //<![CDATA[
+        var url = "/spi/jsp/spt/wisenut/popKeywordXml.jsp";
+        new Ajax.Request(url, {
+          method: 'GET',
+          onSuccess: function(transport) {
+          var result =transport.responseXML;//.documentElement;
+          var qs = result.getElementsByTagName("query");
+          var q;
+          var o="";
+          var s;
+          var chk=0;
+          var resultSize=0;
+          for (var i=0;i<3;i++) {
+            q=   qs[i];
+            s=q.getAttribute("name");
+            /*
+            if(i == 0) s="1인창조기업";
+            else if(i == 1) s="소득공제";
+            else if(i == 2) s="고용창출지원사업";
+            else s="창업지원";
+            */
+            //chk+=s.length;
+            //if(chk>25) break;
+            resultSize++;
+          }
+          for (var j=0;j<resultSize;j++) {
+            q=   qs[j];
+            s=q.getAttribute("name");
+            /*
+            if(j == 0) s="1인창조기업";
+            else if(j == 1) s="소득공제";
+            else if(j == 2) s="고용창출지원사업";
+            else s="창업지원";
+            */
+            if(j != resultSize-1){
+              s="<li class='fl pl10'><a href=\"/spi/jsp/spt/wisenut/total.jsp?query="+s+"\" title=\"새창열림\" target=\"_blank\" \"javascript:popularSearch('"+s+"');return false;\">"+s+"</a>,</li>";
+            }else{
+              s="<li class='fl pl10'><a href=\"/spi/jsp/spt/wisenut/total.jsp?query="+s+"\" title=\"새창열림\" target=\"_blank\" \"javascript:popularSearch('"+s+"');return false;\">"+s+"</a></li>";
+            }
+            o+=s;
+          }
+          var pdiv =document.getElementById("popular_div");
+          pdiv.innerHTML=o;
+        }
+        });
+      //]]>
+            </script>
+
+    </div>
+    <!-- 통합 검색 : E -->
+    <!-- 핫이슈 -->
+    <div class="hotissue"><img src="/spi/img/common/top_slogan.gif" alt="중소기업 성공의 열쇠 비즈인포" /></div>
+    <!-- 핫이슈 : E -->
+
+    <!-- Global : Navigation & Visual Image -->
+
+
+
+    <!-- gnb -->
+    <script type="text/javascript" src="/spi/js/top_policy.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      var last_policy_shortcut_no     = 0;
+      var arr_policy_shortcut_no = new Array(9);
+
+      var arr_large_nm = new Array("categorybox_large_1000","categorybox_large_2000","categorybox_large_3000","categorybox_large_4000","categorybox_large_5000","categorybox_large_6000","categorybox_large_7000","categorybox_large_8000","categorybox_large_9000");
+      var arr_medi_nm = new Array("categorybox_medi_1000","categorybox_medi_2000","categorybox_medi_3000","categorybox_medi_4000","categorybox_medi_5000","categorybox_medi_6000","categorybox_medi_7000","categorybox_medi_8000","categorybox_medi_9000");
+      var arr_small_nm = new Array("categorybox_small_1000","categorybox_small_2000","categorybox_small_3000","categorybox_small_4000","categorybox_small_5000","categorybox_small_6000","categorybox_small_7000","categorybox_small_8000","categorybox_small_9000");
+
+      for(i=0;i<9;i++) arr_policy_shortcut_no[i]=0;
+
+      //소분류 호출
+      function fn_SmallDiv(sno) {
+
+        if (cur_code == '') cur_code = '1000';
+
+        if (sno > 0 && !eval("gnb_scut_"+cur_code)) {
+          //alert('sno=>'+sno);
+          document.getElementById("shortcut_loading").style.display="block";
+          last_policy_shortcut_no = sno;
+          fn_DynamicShortCut(cur_code); return;
+        }
+
+        document.getElementById("shortcut_loading").style.display="none";
+        document.getElementById("categorybox_small_"+cur_code).style.display="block";
+
+        if (last_policy_shortcut_no>0) {
+          document.getElementById("policy_small_"+last_policy_shortcut_no).style.display="none";
+          document.getElementById("policy_sel_"+last_policy_shortcut_no).className="categorybox_list_link";
+        }
+        if (sno>0) {
+          document.getElementById("policy_small_"+sno).style.display="block";
+          document.getElementById("policy_sel_"+sno).className="categorybox_list_link_selected";
+        }
+        last_policy_shortcut_no = sno;
+
+      }
+
+      //대분류 레이어 및 중분류 호출
+      function fn_LargeDiv(val){
+
+        last_large_code = val;
+        cur_code = val;
+        divstr = "medi_"+val;
+
+        if (!eval("gnb_policy_"+val)) {
+          fn_DynamicClassList(cur_code); return;
+        }
+
+        for(var i=0; i<arr_small_nm.length; i++) document.getElementById(arr_small_nm[i]).style.display="none";
+
+        for(var i=0; i<arr_medi_nm.length; i++) {
+          if (arr_medi_nm[i] == "categorybox_medi_"+cur_code) document.getElementById(arr_medi_nm[i]).style.display="block";
+          else document.getElementById(arr_medi_nm[i]).style.display="none";
+        }
+
+        for(var i=0; i<arr_large_nm.length; i++) {
+          if (arr_large_nm[i] == "categorybox_large_"+cur_code) document.getElementById(arr_large_nm[i]).style.display="block";
+          else document.getElementById(arr_large_nm[i]).style.display="none";
+        }
+
+        switch (divstr){
+          case  "medi_1000":{  // 금융
+            document.getElementById("categorybox_medi_1000").style.display="block";
+            document.getElementById("categorybox_large_1000").style.display="block";
+            break;
+          }
+          case  "medi_2000":{    // 세제
+            document.getElementById("categorybox_medi_2000").style.display="block";
+            document.getElementById("categorybox_large_2000").style.display="block";
+            break;
+          }
+          case  "medi_3000":{    // 기술
+            document.getElementById("categorybox_medi_3000").style.display="block";
+            document.getElementById("categorybox_large_3000").style.display="block";
+            break;
+          }
+          case  "medi_4000":{  // 인력
+            document.getElementById("categorybox_medi_4000").style.display="block";
+            document.getElementById("categorybox_large_4000").style.display="block";
+            break;
+          }
+          case  "medi_5000":{    // 창업/벤처
+            document.getElementById("categorybox_medi_5000").style.display="block";
+            document.getElementById("categorybox_large_5000").style.display="block";
+            break;
+          }
+          case  "medi_6000":{    // 판로/수출
+            document.getElementById("categorybox_medi_6000").style.display="block";
+            document.getElementById("categorybox_large_6000").style.display="block";
+            break;
+          }
+          case  "medi_7000":{    // 컨설팅/특허/인증
+            document.getElementById("categorybox_medi_7000").style.display="block";
+            document.getElementById("categorybox_large_7000").style.display="block";
+            break;
+          }
+          case  "medi_8000":{    // 소상공인/전통시장
+            document.getElementById("categorybox_medi_8000").style.display="block";
+            document.getElementById("categorybox_large_8000").style.display="block";
+            break;
+          }
+          case  "medi_9000":{    // 여성/장애인/기타
+            document.getElementById("categorybox_medi_9000").style.display="block";
+            document.getElementById("categorybox_large_9000").style.display="block";
+            break;
+          }
+        }  // end switch
+
+        fn_SmallDiv(0);
+
+      }
+
+      //분류코드검색용 함수 : 분류코드 직접입력시 호출하는 함수
+      function onPCodeSearch() {
+        var form = document.pcode_search;
+        var code = form["policyInfoSerchTO.searchText"].value;
+
+        //alert(code);
+        if (code == "" || code.length != 4) {
+          alert("분류코드(4자리 숫자)를 입력하세요.");
+          form["policyInfoSerchTO.searchText"].focus();
+          return;
+        } else {
+          if(isNaN(code)) {
+            alert("분류코드는 숫자만 입력가능합니다.");
+            form["policyInfoSerchTO.searchText"].focus();
+            return;
+          }
+        }
+
+        //form.submit();
+
+        document.getElementById("search_loading").style.display="block";
+        document.getElementById("categorybox_search").style.display="none";
+        fn_DynamicCodeSearch(code);
+      }
+
+      //분류코드검색용 함수 : 분류선택시 호출하는 함수
+      function goPCodeSearch(code) {
+        var form = document.pcode_search;
+        form["policyInfoSerchTO.searchText"].value = code;
+
+        document.getElementById("search_loading").style.display="block";
+        document.getElementById("categorybox_search").style.display="none";
+
+        //setTimeout ("fn_DynamicCodeSearch2('"+code+"')", 200);
+        fn_DynamicCodeSearch2(code);
+      }
+      //]]>
+    </script>
+
+    <div id="gnb">
+      <h2 id="q_gnb">메뉴목차</h2>
+      <ul>
+
+        <li>
+          <dl id="gnb_0" >
+            <dt><a href="/">전체분류 열기</a></dt>
+
+            <!-- start:categorybox -->
+            <dd id="categorybox">
+              <div id="categorybox_top">
+                <p><img src="/spi/img/common/gnb/categorybox_top_img1.gif" alt="청색 상자로 둘러져 있는 숫자" /></p>
+                <p><span>표시는 지원사업의 분류코드 입니다. 분류코드로 쉽고 빠르게 지원사업정보를 찾으실 수 있습니다.</span></p>
+              </div>
+              <!-- 대분류 -->
+              <div id="categorybox_listbox_1">
+                <div id="categorybox_large_1000" style="display:block;">
+                <ul class="categorybox_list">
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('1000');goPCodeSearch('1000');return false;" class="categorybox_list_link_selected" title="금융" ><span>금융</span><label>1000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('2000');goPCodeSearch('2000');return false;" class="categorybox_list_link" title="세제"><span>세제</span><label>2000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('3000');goPCodeSearch('3000');return false;" class="categorybox_list_link" title="기술"><span>기술</span><label>3000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('4000');goPCodeSearch('4000');return false;" class="categorybox_list_link" title="인력"><span>인력</span><label>4000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('5000');goPCodeSearch('5000');return false;" class="categorybox_list_link" title="창업/벤처"><span>창업/벤처</span><label>5000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('6000');goPCodeSearch('6000');return false;" class="categorybox_list_link" title="판로/수출"><span>판로/수출</span><label>6000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('7000');goPCodeSearch('7000');return false;" class="categorybox_list_link" title="컨설팅/특허/인증"><span>컨설팅/특허/인증</span><label>7000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('8000');goPCodeSearch('8000');return false;" class="categorybox_list_link" title="소상공인/전통시장"><span>소상공인/전통시장</span><label>8000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('9000');goPCodeSearch('9000');return false;" class="categorybox_list_link" title="장애인/여성/기타"><span>장애인/여성/기타</span><label>9000</label></a></li>
+                </ul>
+                </div>
+                <div id="categorybox_large_2000" style="display:none;">
+                <ul class="categorybox_list">
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('1000');goPCodeSearch('1000');return false;" class="categorybox_list_link" title="금융" ><span>금융</span><label>1000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('2000');goPCodeSearch('2000');return false;" class="categorybox_list_link_selected" title="세제"><span>세제</span><label>2000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('3000');goPCodeSearch('3000');return false;" class="categorybox_list_link" title="기술"><span>기술</span><label>3000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('4000');goPCodeSearch('4000');return false;" class="categorybox_list_link" title="인력"><span>인력</span><label>4000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('5000');goPCodeSearch('5000');return false;" class="categorybox_list_link" title="창업/벤처"><span>창업/벤처</span><label>5000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('6000');goPCodeSearch('6000');return false;" class="categorybox_list_link" title="판로/수출"><span>판로/수출</span><label>6000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('7000');goPCodeSearch('7000');return false;" class="categorybox_list_link" title="컨설팅/특허/인증"><span>컨설팅/특허/인증</span><label>7000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('8000');goPCodeSearch('8000');return false;" class="categorybox_list_link" title="소상공인/전통시장"><span>소상공인/전통시장</span><label>8000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('9000');goPCodeSearch('9000');return false;" class="categorybox_list_link" title="장애인/여성/기타"><span>장애인/여성/기타</span><label>9000</label></a></li>
+                </ul>
+                </div>
+                <div id="categorybox_large_3000" style="display:none;">
+                <ul class="categorybox_list">
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('1000');goPCodeSearch('1000');return false;" class="categorybox_list_link" title="금융" ><span>금융</span><label>1000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('2000');goPCodeSearch('2000');return false;" class="categorybox_list_link" title="세제"><span>세제</span><label>2000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('3000');goPCodeSearch('3000');return false;" class="categorybox_list_link_selected" title="기술"><span>기술</span><label>3000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('4000');goPCodeSearch('4000');return false;" class="categorybox_list_link" title="인력"><span>인력</span><label>4000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('5000');goPCodeSearch('5000');return false;" class="categorybox_list_link" title="창업/벤처"><span>창업/벤처</span><label>5000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('6000');goPCodeSearch('6000');return false;" class="categorybox_list_link" title="판로/수출"><span>판로/수출</span><label>6000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('7000');goPCodeSearch('7000');return false;" class="categorybox_list_link" title="컨설팅/특허/인증"><span>컨설팅/특허/인증</span><label>7000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('8000');goPCodeSearch('8000');return false;" class="categorybox_list_link" title="소상공인/전통시장"><span>소상공인/전통시장</span><label>8000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('9000');goPCodeSearch('9000');return false;" class="categorybox_list_link" title="장애인/여성/기타"><span>장애인/여성/기타</span><label>9000</label></a></li>
+                </ul>
+                </div>
+                <div id="categorybox_large_4000" style="display:none;">
+                <ul class="categorybox_list">
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('1000');goPCodeSearch('1000');return false;" class="categorybox_list_link" title="금융" ><span>금융</span><label>1000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('2000');goPCodeSearch('2000');return false;" class="categorybox_list_link" title="세제"><span>세제</span><label>2000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('3000');goPCodeSearch('3000');return false;" class="categorybox_list_link" title="기술"><span>기술</span><label>3000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('4000');goPCodeSearch('4000');return false;" class="categorybox_list_link_selected" title="인력"><span>인력</span><label>4000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('5000');goPCodeSearch('5000');return false;" class="categorybox_list_link" title="창업/벤처"><span>창업/벤처</span><label>5000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('6000');goPCodeSearch('6000');return false;" class="categorybox_list_link" title="판로/수출"><span>판로/수출</span><label>6000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('7000');goPCodeSearch('7000');return false;" class="categorybox_list_link" title="컨설팅/특허/인증"><span>컨설팅/특허/인증</span><label>7000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('8000');goPCodeSearch('8000');return false;" class="categorybox_list_link" title="소상공인/전통시장"><span>소상공인/전통시장</span><label>8000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('9000');goPCodeSearch('9000');return false;" class="categorybox_list_link" title="장애인/여성/기타"><span>장애인/여성/기타</span><label>9000</label></a></li>
+                </ul>
+                </div>
+                <div id="categorybox_large_5000" style="display:none;">
+                <ul class="categorybox_list">
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('1000');goPCodeSearch('1000');return false;" class="categorybox_list_link" title="금융" ><span>금융</span><label>1000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('2000');goPCodeSearch('2000');return false;" class="categorybox_list_link" title="세제"><span>세제</span><label>2000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('3000');goPCodeSearch('3000');return false;" class="categorybox_list_link" title="기술"><span>기술</span><label>3000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('4000');goPCodeSearch('4000');return false;" class="categorybox_list_link" title="인력"><span>인력</span><label>4000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('5000');goPCodeSearch('5000');return false;" class="categorybox_list_link_selected" title="창업/벤처"><span>창업/벤처</span><label>5000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('6000');goPCodeSearch('6000');return false;" class="categorybox_list_link" title="판로/수출"><span>판로/수출</span><label>6000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('7000');goPCodeSearch('7000');return false;" class="categorybox_list_link" title="컨설팅/특허/인증"><span>컨설팅/특허/인증</span><label>7000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('8000');goPCodeSearch('8000');return false;" class="categorybox_list_link" title="소상공인/전통시장"><span>소상공인/전통시장</span><label>8000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('9000');goPCodeSearch('9000');return false;" class="categorybox_list_link" title="장애인/여성/기타"><span>장애인/여성/기타</span><label>9000</label></a></li>
+                </ul>
+                </div>
+                <div id="categorybox_large_6000" style="display:none;">
+                <ul class="categorybox_list">
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('1000');goPCodeSearch('1000');return false;" class="categorybox_list_link" title="금융" ><span>금융</span><label>1000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('2000');goPCodeSearch('2000');return false;" class="categorybox_list_link" title="세제"><span>세제</span><label>2000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('3000');goPCodeSearch('3000');return false;" class="categorybox_list_link" title="기술"><span>기술</span><label>3000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('4000');goPCodeSearch('4000');return false;" class="categorybox_list_link" title="인력"><span>인력</span><label>4000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('5000');goPCodeSearch('5000');return false;" class="categorybox_list_link" title="창업/벤처"><span>창업/벤처</span><label>5000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('6000');goPCodeSearch('6000');return false;" class="categorybox_list_link_selected" title="판로/수출"><span>판로/수출</span><label>6000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('7000');goPCodeSearch('7000');return false;" class="categorybox_list_link" title="컨설팅/특허/인증"><span>컨설팅/특허/인증</span><label>7000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('8000');goPCodeSearch('8000');return false;" class="categorybox_list_link" title="소상공인/전통시장"><span>소상공인/전통시장</span><label>8000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('9000');goPCodeSearch('9000');return false;" class="categorybox_list_link" title="장애인/여성/기타"><span>장애인/여성/기타</span><label>9000</label></a></li>
+                </ul>
+                </div>
+                <div id="categorybox_large_7000" style="display:none;">
+                <ul class="categorybox_list">
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('1000');goPCodeSearch('1000');return false;" class="categorybox_list_link" title="금융" ><span>금융</span><label>1000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('2000');goPCodeSearch('2000');return false;" class="categorybox_list_link" title="세제"><span>세제</span><label>2000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('3000');goPCodeSearch('3000');return false;" class="categorybox_list_link" title="기술"><span>기술</span><label>3000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('4000');goPCodeSearch('4000');return false;" class="categorybox_list_link" title="인력"><span>인력</span><label>4000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('5000');goPCodeSearch('5000');return false;" class="categorybox_list_link" title="창업/벤처"><span>창업/벤처</span><label>5000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('6000');goPCodeSearch('6000');return false;" class="categorybox_list_link" title="판로/수출"><span>판로/수출</span><label>6000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('7000');goPCodeSearch('7000');return false;" class="categorybox_list_link_selected" title="컨설팅/특허/인증"><span>컨설팅/특허/인증</span><label>7000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('8000');goPCodeSearch('8000');return false;" class="categorybox_list_link" title="소상공인/전통시장"><span>소상공인/전통시장</span><label>8000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('9000');goPCodeSearch('9000');return false;" class="categorybox_list_link" title="장애인/여성/기타"><span>장애인/여성/기타</span><label>9000</label></a></li>
+                </ul>
+                </div>
+                <div id="categorybox_large_8000" style="display:none;">
+                <ul class="categorybox_list">
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('1000');goPCodeSearch('1000');return false;" class="categorybox_list_link" title="금융" ><span>금융</span><label>1000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('2000');goPCodeSearch('2000');return false;" class="categorybox_list_link" title="세제"><span>세제</span><label>2000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('3000');goPCodeSearch('3000');return false;" class="categorybox_list_link" title="기술"><span>기술</span><label>3000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('4000');goPCodeSearch('4000');return false;" class="categorybox_list_link" title="인력"><span>인력</span><label>4000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('5000');goPCodeSearch('5000');return false;" class="categorybox_list_link" title="창업/벤처"><span>창업/벤처</span><label>5000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('6000');goPCodeSearch('6000');return false;" class="categorybox_list_link" title="판로/수출"><span>판로/수출</span><label>6000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('7000');goPCodeSearch('7000');return false;" class="categorybox_list_link" title="컨설팅/특허/인증"><span>컨설팅/특허/인증</span><label>7000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('8000');goPCodeSearch('8000');return false;" class="categorybox_list_link_selected" title="소상공인/전통시장"><span>소상공인/전통시장</span><label>8000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('9000');goPCodeSearch('9000');return false;" class="categorybox_list_link" title="장애인/여성/기타"><span>장애인/여성/기타</span><label>9000</label></a></li>
+                </ul>
+                </div>
+                <div id="categorybox_large_9000" style="display:none;">
+                <ul class="categorybox_list">
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('1000');goPCodeSearch('1000');return false;" class="categorybox_list_link" title="금융" ><span>금융</span><label>1000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('2000');goPCodeSearch('2000');return false;" class="categorybox_list_link" title="세제"><span>세제</span><label>2000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('3000');goPCodeSearch('3000');return false;" class="categorybox_list_link" title="기술"><span>기술</span><label>3000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('4000');goPCodeSearch('4000');return false;" class="categorybox_list_link" title="인력"><span>인력</span><label>4000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('5000');goPCodeSearch('5000');return false;" class="categorybox_list_link" title="창업/벤처"><span>창업/벤처</span><label>5000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('6000');goPCodeSearch('6000');return false;" class="categorybox_list_link" title="판로/수출"><span>판로/수출</span><label>6000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('7000');goPCodeSearch('7000');return false;" class="categorybox_list_link" title="컨설팅/특허/인증"><span>컨설팅/특허/인증</span><label>7000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('8000');goPCodeSearch('8000');return false;" class="categorybox_list_link" title="소상공인/전통시장"><span>소상공인/전통시장</span><label>8000</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_LargeDiv('9000');goPCodeSearch('9000');return false;" class="categorybox_list_link_selected" title="장애인/여성/기타"><span>장애인/여성/기타</span><label>9000</label></a></li>
+                </ul>
+                </div>
+              </div>
+              <!-- 대분류 : E -->
+
+              <!-- 중분류 -->
+              <div id="categorybox_listbox_2">
+                <div id="categorybox_medi_1000" style="display:block;">
+                <ul class="categorybox_list" >
+                  <li><a href="#//" onClick="javascript:fn_SmallDiv(1100);goPCodeSearch('1100');return false;" id="policy_sel_1100" class="categorybox_list_link" ><span>융자</span><label>1100</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_SmallDiv(1200);goPCodeSearch('1200');return false;" id="policy_sel_1200" class="categorybox_list_link"><span>보증</span><label>1200</label></a></li>
+                  <li><a href="#//" onClick="javascript:fn_SmallDiv(1300);goPCodeSearch('1300');return false;" id="policy_sel_1300" class="categorybox_list_link"><span>보험</span><label>1300</label></a></li>
+                </ul>
+                </div>
+                <div id="categorybox_medi_2000" style="display:none;"></div>
+                <div id="categorybox_medi_3000" style="display:none;"></div>
+                <div id="categorybox_medi_4000" style="display:none;"></div>
+                <div id="categorybox_medi_5000" style="display:none;"></div>
+                <div id="categorybox_medi_6000" style="display:none;"></div>
+                <div id="categorybox_medi_7000" style="display:none;"></div>
+                <div id="categorybox_medi_8000" style="display:none;"></div>
+                <div id="categorybox_medi_9000" style="display:none;"></div>
+              </div>
+              <!-- 중분류 : E -->
+
+              <!-- 소분류 -->
+              <div id="categorybox_listbox_3">
+                <div id="shortcut_loading" style="display:none;">
+                <br></br><br></br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <img src="/spi/img/common/gnb/loading.gif" border="0" alt="로딩" />
+                </div>
+                <div id="categorybox_small_1000" style="display:none;"></div>
+                <div id="categorybox_small_2000" style="display:none;"></div>
+                <div id="categorybox_small_3000" style="display:none;"></div>
+                <div id="categorybox_small_4000" style="display:none;"></div>
+                <div id="categorybox_small_5000" style="display:none;"></div>
+                <div id="categorybox_small_6000" style="display:none;"></div>
+                <div id="categorybox_small_7000" style="display:none;"></div>
+                <div id="categorybox_small_8000" style="display:none;"></div>
+                <div id="categorybox_small_9000" style="display:none;"></div>
+              </div>
+              <!-- 소분류 : E -->
+
+              <div id="categorybox_listbox_4">
+                <form name="pcode_search" action="/userPolicyCodeSearch.do" method="post" onsubmit="javascript:onPCodeSearch();return false;" style="margin: 0px">
+                  <p><span><img src="/spi/img/common/gnb/categorybox_top_img2.gif" class="image_float_left" id="categorybox_top_img2" alt="분류코드 검색" /></span></p>
+                  <p><span><input type="text" name="policyInfoSerchTO.searchText" size="21" title="분류코드 입력" value="1000" /><input type="image" src="/spi/img/common/gnb/categorybox_top_button3.gif" class="image_float_left" alt="분류코드검색" title="분류코드검색" /></span></p>
+                </form>
+                <div id="search_loading" style="display:none;">
+                  <br></br><br></br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  <img src="/spi/img/common/gnb/loading.gif" border="0" alt="로딩" />
+                </div>
+                <br></br>
+                <div id="categorybox_search" style="display:block;">
+                  <p><span>찾으시는 분류코드는</span></p>
+                  <p><label>1000</label></p>
+                  <p><span><strong>금융</strong>입니다.</span></p>
+                  <p><span><a href="/userPolicyInfoList.do?policyInfoSerchTO.lclasId=1000&amp;policyInfoSerchTO.mlsfcId=&amp;policyInfoSerchTO.sclasId="><img src="/spi/img/common/gnb/categorybox_top_button4.gif" border="0" alt="진행중인 사업바로가기 버튼"></img></a></span></p>
+                </div>
+              </div>
+              <div class="clearboth"></div>
+
+              <a href="#//" onclick="javascript:closecategory();" class="closebtn" ><img src="/spi/img/common/gnb/categorybox_top_button2.gif" alt="닫기 버튼" /></a>
+
+            </dd>
+            <!-- end:categorybox -->
+
+          </dl>
+        </li>
+
+        <li>
+          <dl id="gnb_1">
+            <dt class="menu_on"><a href="/userPolicyInfoList.do">지원사업정보</a></dt>
+            <dd class="submenu" style="display: block">
+              <a href="/userPolicyInfoList.do" class="first"><img src="/spi/img/common/gnb/01-01_f_o.gif" alt="분야별"  /></a>
+              <a href="/userPolicyInfoList.do?policyInfoSerchTO.division=3&amp;policyInfoSerchTO.insttSe=1"><img src="/spi/img/common/gnb/01-02_f.gif" alt="지원기관별" class="ro" /></a>
+              <a href="/userPolicyInfoList.do?policyInfoSerchTO.division=2"><img src="/spi/img/common/gnb/01-03_f.gif" alt="수요자별" class="ro" /></a>
+              <a href="/policyCalendar.do"><img src="/spi/img/common/gnb/01-04_f.gif" alt="지원사업일정" class="ro" /></a>
+              <a href="/spi/jsp/spt/wisenut/policySearch.jsp"><img src="/spi/img/common/gnb/01-06_f.gif" alt="상세검색" class="ro" /></a>
+              <a href="/userPolicyCategoryMap.do"><img src="/spi/img/common/gnb/01-07_f.gif" alt="전체분류보기" class="ro" /></a>
+              <a href="/onlineList.do"><img src="/spi/img/common/gnb/01-08_f.gif" alt="온라인신청가능사업" class="ro" /></a>
+
+              <a href="/opinionQnAList.do"><img src="/spi/img/common/gnb/01-100_f.gif" alt="지원사업질의응답모음" class="ro" /></a>
+            </dd>
+          </dl>
+        </li>
+
+        <li>
+          <dl id="gnb_2">
+            <dt ><a href="/userManageInfoList.do?manageInfoSearchTO.division=1">경영정보</a></dt>
+            <dd class="submenu" >
+              <a href="/userManageInfoList.do?manageInfoSearchTO.division=1" class="first"><img src="/spi/img/common/gnb/02-01_f.gif" alt="국내ㆍ외 동향" class="ro" /></a>
+              <a href="/userManageInfoList.do?manageInfoSearchTO.division=1&amp;manageInfoSearchTO.code_id=0800"><img src="/spi/img/common/gnb/02-07_f.gif" alt="FTA자료" class="ro" /></a>
+              <a href="/userManageInfoList.do?manageInfoSearchTO.division=2&amp;manageInfoSearchTO.code_id=0210"><img src="/spi/img/common/gnb/02-02_f.gif" alt="경영일반" class="ro" /></a>
+              <a href="/userManageInfoList.do?manageInfoSearchTO.division=3&amp;manageInfoSearchTO.code_id=0310"><img src="/spi/img/common/gnb/02-03_f.gif" alt="산업분야" class="ro" /></a>
+              <a href="/userManageInfoList.do?manageInfoSearchTO.division=8&amp;manageInfoSearchTO.code_id=0610"><img src="/spi/img/common/gnb/02-08_f.gif" alt="신문스크랩" class="ro" /></a>
+              <a href="/powerContents.do"><img src="/spi/img/common/gnb/02-04_f.gif" alt="전문가에게듣는 5분 특강" class="ro" /></a>
+              <a href="/spi/jsp/spt/wisenut/manageSearch.jsp"><img src="/spi/img/common/gnb/02-05_f.gif" alt="상세검색" class="ro" /></a>
+            </dd>
+          </dl>
+        </li>
+
+        <li>
+          <dl id="gnb_3">
+            <dt ><a href="/userEventInfoList.do?eventInfoSearchTO.division=1">행사정보</a></dt>
+            <dd class="submenu" >
+              <a href="/userEventInfoList.do?eventInfoSearchTO.division=1" class="first"><img src="/spi/img/common/gnb/03-01_f.gif" alt="지역별" class="ro" /></a>
+              <a href="/userEventInfoList.do?eventInfoSearchTO.division=2"><img src="/spi/img/common/gnb/03-02_f.gif" alt="유형별" class="ro" /></a>
+              <a href="/userEventInfoList.do?eventInfoSearchTO.division=3"><img src="/spi/img/common/gnb/03-03_f.gif" alt="상세검색" class="ro" /></a>
+              <a href="/eventCalendar.do?division=1"><img src="/spi/img/common/gnb/03-04_f.gif" alt="행사달력보기" class="ro" /></a>
+            </dd>
+          </dl>
+        </li>
+
+
+        <li>
+          <dl id="gnb_4">
+            <dt ><a href="/bizguide1.do">기업경영 메뉴얼</a></dt>
+            <!-- start:categorybox -->
+
+            <dd id="bizguidebox">
+              <div id="bizguidebox_top">
+                <p><span>창업하기,경영하기,사업전환하기의 3단계에 걸쳐 기업 경영에 필요한 기본적인 매뉴얼을 제공합니다.</span></p>
+              </div>
+              <!-- 대분류 -->
+              <div id="bizguidebox_listbox_1">
+                <div id="bizguide_box">
+                  <ul class="bizguidebox_list">
+                    <li><a href="#//" id="bizguide_10000"><span>창업하기</span></a></li>
+                    <li><a href="#//" id="bizguide_20000"><span>경영하기</span></a></li>
+                    <li><a href="#//" id="bizguide_30000"><span>사업전환하기</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 대분류 : E -->
+
+              <!-- 중분류 -->
+              <div id="bizguidebox_listbox_2"></div>
+
+              <!-- 소분류 -->
+              <div id="bizguidebox_listbox_3"></div>
+
+              <!-- 소분류2 -->
+              <div id="bizguidebox_listbox_4"></div>
+
+              <div class="clearboth"></div>
+
+              <!-- 닫기버튼 -->
+              <a href="#//" onclick="javascript:closebizguidebox();" class="closebtn" ><img src="/spi/img/common/gnb/categorybox_top_button2.gif" alt="닫기 버튼" /></a>
+            </dd>
+
+            <dd class="submenu" >
+              <a href="/bizguide1.do" class="first"><img src="/spi/img/common/gnb/05-01_f.gif" alt="창업하기" class="ro" /></a>
+              <a href="/bizguide2.do"><img src="/spi/img/common/gnb/05-02_f.gif" alt="경영하기" class="ro" /></a>
+              <a href="/bizguide3.do"><img src="/spi/img/common/gnb/05-03_f.gif" alt="사업전환하기" class="ro" /></a>
+              <a href="/formDwlnd.do"><img src="/spi/img/common/gnb/05-04_f.gif" alt="서식다운로드" class="ro" /></a>
+            </dd>
+          </dl>
+          <!--뉴아이콘  <img src="/spi/img/common/gnb/icon_new2.gif" alt="new" id="icon_new" /> -->
+        </li>
+
+        <li>
+          <dl id="gnb_5">
+            <dt ><a href="http://link.bizinfo.go.kr" target="_blank" title="비즈니스지원단(새창열림)">비즈니스지원단</a></dt>
+            <dd class="submenu" >
+              <a href="http://link.bizinfo.go.kr" class="first" target="_blank" title="비즈니스지원단 새창열림"><img src="/spi/img/common/gnb/06-06_f.gif" alt="비즈니스지원단홈" class="ro" /></a>
+              <a href="http://link.bizinfo.go.kr/board/movie_board.jsp" target="_blank" title="현장클리닉 사례 동영상 새창열림"><img src="/spi/img/common/gnb/06-07_f.gif" alt="현장클리닉 사례동영상" class="ro" /></a>
+            </dd>
+          </dl>
+        </li>
+
+        <li>
+          <dl id="gnb_6">
+            <dt ><a href="/boardList.do?MANAGE_ID=102">참여&amp;소식</span></a></dt>
+            <dd class="submenu" >
+              <a href="/boardList.do?MANAGE_ID=102" class="first"><img src="/spi/img/common/gnb/07-01_f.gif" alt="공지사항" class="ro" /></a>
+              <a href="/spiWish.do"><img src="/spi/img/common/gnb/07-02_f.gif" alt="불편 신고" class="ro" /></a>
+              <a href="http://smba.go.kr/user.tdf?a=common.HtmlApp&c=1001&page=html/kor/minwon/minwon_10/minwon_11.html&mc=SMBA_MINWON_11#top2" target="_blank"><img src="/spi/img/common/gnb/07-05_f.gif" alt="민원신청" class="ro" /></a>
+              <!--
+              <a href="/questionresearch/questionResearchList.do"><img src="/spi/img/common/gnb/07-03_f.gif" alt="설문조사" class="ro" /></a>
+               -->
+              <a href="/boardList.do?MANAGE_ID=114"><img src="/spi/img/common/gnb/07-04_f.gif" alt="핫이슈" class="ro" /></a>
+            </dd>
+          </dl>
+        </li>
+
+        <li>
+          <dl id="gnb_7">
+            <dt ><a href="/spi_intro.do">비즈인포소개</a></dt>
+            <dd class="submenu" >
+              <a href="/spi_intro.do" class="first"><img src="/spi/img/common/gnb/08-01_f.gif" alt="비즈인포란?" class="ro" /></a>
+              <a href="/history2011.do"><img src="/spi/img/common/gnb/08-06_f.gif" alt="비즈인포 히스토리" class="ro" /></a>
+              <a href="/bizinfoGuide1.do"><img src="/spi/img/common/gnb/08-02_f.gif" alt="비즈인포 이용하기" class="ro" /></a>
+              <a href="/smba_intro.do"><img src="/spi/img/common/gnb/08-03_f.gif" alt="중소기업청소개" class="ro" /></a>
+              <a href="/boardList.do?MANAGE_ID=112"><img src="/spi/img/common/gnb/08-04_f.gif" alt="홍보자료실" class="ro" /></a>
+              <a href="/spi_map.do"><img src="/spi/img/common/gnb/08-05_f.gif" alt="찾아오시는 길" class="ro" /></a>
+            </dd>
+          </dl>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <!-- gnb : E -->
+    <!-- Global : Navigation & Visual Image -->
+
+  </div>
+  <!-- header : E -->
+  <!-- 화면 초기화 -->
+
+
+  <!-- header : E -->
+
+  <!-- containerSub -->
+
+
+<script type="text/javascript">
+//<![CDATA[
+function js_submenu(mainmenu,submenu){
+
+  // mainmenu 상태변경(이미지)
+  for(var i = 1 ; i <= 10 ; i ++){
+    if(i == mainmenu){
+      document.getElementById('mainmenu'+i).src = document.getElementById('mainmenu'+i).src.replace("_f.", "_f_o.");
+      document.getElementById('mainmenu'+i).className="";
+    }
+  }
+
+  // submenu 상태변경(이미지)
+  for(var i = 1 ; i <= 3 ; i ++){
+    if(i == submenu){
+      document.getElementById('submenu'+i).style.display="block";
+    }
+  }
+}
+//]]>
+</script>
+  <!-- containerSub -->
+  <div id="containerSub">
+    <!-- snb -->
+    <div id="snb">
+      <h2 id="q_snb">서브메뉴 목차</h2>
+
+      <h2><img src="/spi/img/policyinfo/tit_policyinfo.gif" width="172" alt="지원사업정보" /></h2>
+      <ul class="menugreen">
+
+        <!-- 분야별 시작  -->
+        <li><a href="/userPolicyInfoList.do"><img id="mainmenu1" src="http://www.bizinfo.go.kr/spi/img/policyinfo/snb_01_f.gif" alt="분야별" class="ro" /></a></li>
+
+        <li id="submenu1" class="submenu dn">
+          <ul>
+            <li class="first"><a href="/userPolicyInfoList.do?policyInfoSerchTO.lclasId=1000">금융</a></li>
+            <li><a href="/userPolicyInfoList.do?policyInfoSerchTO.lclasId=2000">세제</a></li>
+            <li><a href="/userPolicyInfoList.do?policyInfoSerchTO.lclasId=3000">기술</a></li>
+            <li><a href="/userPolicyInfoList.do?policyInfoSerchTO.lclasId=4000">인력</a></li>
+            <li><a href="/userPolicyInfoList.do?policyInfoSerchTO.lclasId=5000">창업/벤처</a></li>
+            <li><a href="/userPolicyInfoList.do?policyInfoSerchTO.lclasId=6000">판로/수출</a></li>
+            <li><a href="/userPolicyInfoList.do?policyInfoSerchTO.lclasId=7000">컨설팅/특허/인증</a></li>
+            <li><a href="/userPolicyInfoList.do?policyInfoSerchTO.lclasId=8000">소상공인/전통시장</a></li>
+            <li class="end"><a href="/userPolicyInfoList.do?policyInfoSerchTO.lclasId=9000">여성/장애인/기타</a></li>
+          </ul>
+        </li>
+        <!--  분야별 끝 -->
+
+        <!-- 지원기관별 시작  -->
+        <li><a href="/userPolicyInfoList.do?policyInfoSerchTO.division=3&amp;policyInfoSerchTO.insttSe=1"><img id="mainmenu2" src="http://www.bizinfo.go.kr/spi/img/policyinfo/snb_02_f.gif" alt="지원기관별"  class="ro" /></a></li>
+
+        <li id="submenu2" class="submenu dn">
+          <ul>
+            <li class="first"><a href="/userPolicyInfoList.do?policyInfoSerchTO.division=3&amp;policyInfoSerchTO.insttSe=1">정부부처</a></li>
+            <li><a href="/userPolicyInfoList.do?policyInfoSerchTO.division=3&amp;policyInfoSerchTO.insttSe=2">지방자치단체</a></li>
+            <li class="end"><a href="/userPolicyInfoList.do?policyInfoSerchTO.division=3&amp;policyInfoSerchTO.insttSe=3">유관기관</a></li>
+          </ul>
+        </li>
+        <!--  지원기관별 끝 -->
+
+        <!-- 수요자별 시작  -->
+        <li><a href="/userPolicyInfoList.do?policyInfoSerchTO.division=2"><img id="mainmenu3" src="http://www.bizinfo.go.kr/spi/img/policyinfo/snb_03_f.gif" alt="수요자별" class="ro" /></a></li>
+
+        <li id="submenu3" class="submenu dn">
+          <ul>
+            <li class="first"><a href="/userPolicyInfoList.do?policyInfoSerchTO.division=2&amp;policyInfoSerchTO.searchKeyDivision=1">지원분야</a></li>
+            <li><a href="/userPolicyInfoList.do?policyInfoSerchTO.division=2&amp;policyInfoSerchTO.searchKeyDivision=2">소재지역</a></li>
+            <li class="end"><a href="/userPolicyInfoList.do?policyInfoSerchTO.division=2&amp;policyInfoSerchTO.searchKeyDivision=3">지원자격</a></li>
+          </ul>
+        </li>
+        <!--  수요자별 끝 -->
+
+        <!-- 지원사업일정 시작  -->
+        <li><a href="/policyCalendar.do"><img id="mainmenu4" src="http://www.bizinfo.go.kr/spi/img/policyinfo/snb_04_f.gif" alt="지원사업일정" class="ro" /></a></li>
+        <!--  지원사업일정 끝 -->
+
+        <!-- 주요지원사업보기 시작  -->
+        <!-- 2010.06 분류체계 개편과 함께 메뉴 막음
+        <li><a href="/userSupportWorkInfoList.do?policyInfoSerchTO.division=5&amp;policyInfoSerchTO.lclasId=1000&amp;policyInfoSerchTO.progress=4"><img id="mainmenu5" src="http://www.bizinfo.go.kr/spi/img/policyinfo/snb_05_f.gif" alt="주요지원사업보기" class="ro" /></a></li>
+        -->
+        <!--  주요지원사업보기 끝 -->
+
+        <!-- 상세검색 시작  -->
+          <li><a href="/spi/jsp/spt/wisenut/policySearch.jsp"><img id="mainmenu6" src="http://www.bizinfo.go.kr/spi/img/policyinfo/snb_06_f.gif" alt="상세검색" class="ro" /></a></li>
+        <!--  상세검색 끝 -->
+
+        <!-- 분류전체보기 시작  -->
+        <li><a href="/userPolicyCategoryMap.do"><img id="mainmenu7" src="http://www.bizinfo.go.kr/spi/img/policyinfo/snb_07_f.gif" alt="분류전체보기" class="ro" /></a></li>
+        <!--  분류전체보기 끝 -->
+
+        <!-- 온라인신청가능사업 시작  -->
+        <li><a href="/onlineList.do"><img id="mainmenu8" src="http://www.bizinfo.go.kr/spi/img/policyinfo/snb_08_f.gif" alt="온라인신청가능사업" class="ro" /></a></li>
+
+        <!--  온라인신청가능사업 끝 -->
+
+        <!-- 최신지원사업정보 시작
+          <li><a href="/userPolicyInfoList.do?policyInfoSerchTO.division=4"><img id="mainmenu9" src="http://www.bizinfo.go.kr/spi/img/policyinfo/snb_09.gif" alt="최신지원사업정보" class="ro" /></a></li>
+        -->
+
+        <!--  최신지원사업정보 끝 -->
+        <!-- 지원사업 질의응답 모음 시작  -->
+        <li><a href="/opinionQnAList.do"><img id="mainmenu10" src="/spi/img/policyinfo/snb_10_f.gif" alt="지원사업질의응답모음" class="ro" /></a></li>
+        <!--  지원사업 질의응답 모음 끝 -->
+      </ul>
+    </div>
+    <!-- snb : E -->
+
+      <!-- content -->
+      <h2 id="q_contents">컨텐츠 영역</h2>
+
+      <div id="contents">
+      <div id="print_div">
+
+  <!-- 본문 시작 -->
+    <form name="userPolicyInfoListForm" method="post" action="/userPolicyInfoList.do">
+  <input type="hidden" name="pageTO.pages" value="1" id="pages" />
+  <input type="hidden" name="policyInfoSerchTO.division" value="1" />
+  <input type="hidden" name="policyInfoSerchTO.areaId" value="" />
+  <input type="hidden" name="policyInfoSerchTO.orderByField" value="FRST_REGIST_DT" id="orderByField" />
+  <input type="hidden" name="policyInfoSerchTO.orderByType" value="DESC" id="orderByType" />
+  <input type="hidden" name="policyInfoSerchTO.lclasId" value="5000" />
+  <input type="hidden" name="policyInfoSerchTO.mlsfcId" value="5100" />
+  <input type="hidden" name="policyInfoSerchTO.sclasId" value="" />
+  <input type="hidden" name="tnPolicyInfoVO.policyCodeId" value="2012smbaa00000682" />
+  <input type="hidden" name="policyInfoSerchTO.progress" value="0" />
+  <input type="hidden" name="policyInfoSerchTO.searchField" value="0" />
+  <input type="hidden" name="policyInfoSerchTO.searchText" value="" />
+  <input type="hidden" name="policyInfoSerchTO.insttSe" value="0" />
+  <input type="hidden" name="policyInfoSerchTO.insttId" value="" />
+
+     <input type="hidden" name="tnPolicyInfoVO.policyLclasId" value="5000" />
+     <input type="hidden" name="tnPolicyInfoVO.policyLclasId_2" value="5000" />
+     <input type="hidden" name="tnPolicyInfoVO.policyLclasId_3" value="3000" />
+     <input type="hidden" name="tnPolicyInfoVO.policyNm" value="2012년도 투자연계 멘토링 초기기업 기술개발사업 시행계획 " />
+
+  <!-- SSO아닌 연계-->
+  <input type="hidden" name="encSpiPolicyCodeId" value="" id="encSpiPolicyCodeId" />
+  <input type="hidden" name="encUserNum" value="" id="encUserNum" />
+
+  <!-- cookie 이용 sso에 넘길 파라미터 2개-->
+  <input type="hidden" name="spiChargerId" value="" id="spiChargerId" />
+
+  <!-- 정책코드 -->
+  <input type="hidden" name="paramSpiPolicyCodeId" value="" id="paramSpiPolicyCodeId" />
+
+  <!-- cookie 이용 sso에 넘길 파라미터 2개 -->
+
+  <!--소수이용 암호화된 사업자번호(주민번호) -->
+  <input type="hidden" name="paramUserNum" value="" id="paramUserNum" />
+  <!-- SSO + 연계 관련 -->
+
+
+  <!-- 사용자일 경우에만 -->
+
+  <!-- SSO + 연계 관련 -->
+
+  <input type="hidden" name="isRegistOrModify" value="" id="isRegistOrModify" />
+  <input type="hidden" name="onlinePage" value="" id="onlinePage" />
+  <input type="hidden" name="policyCodeId" value="" />
+  <input type="hidden" name="rceptInsttId" value="" />
+  <input type="hidden" name="itemId" value="" />
+  <input type="hidden" name="policyNm" value="" />
+  <input type="hidden" name="policyCodeIdSn" value="" />
+  <input type="hidden" name="rceptInsttChargerNm" value="" />
+  <input type="hidden" name="rceptInsttChargerId" value="" />
+
+
+
+    <!--  Contetns +++ start -->
+    <!-- 분야별 지원사업정보 상세조회인 경우  타이틀 및 경로 -->
+
+      <!-- Title & Path -->
+
+
+
+
+
+
+
+
+          <div id="loc"><a href="/index.jsp">HOME</a> &gt; <a href="/userPolicyInfoList.do">지원사업정보</a> &gt; <a href="/userPolicyInfoList.do">분야별</a> &gt; <span class="blue1 fb">창업/벤처</span></div>
+                  <h3><img src="/images/common/title/t0101_05.gif" alt="창업/벤처" /></h3>
+                  <p class="t_text1"></p>
+
+
+
+
+
+
+
+
+    <!-- 기관별 >지원사업정보 상세조회인 경우 타이틀 및 경로  -->
+
+
+      <!-- 수요자별 지원사업정보 상세조회인 경우 타이틀 및 경로  -->
+
+
+    <!-- 최신지원사업정보 상세조회인 경우  타이틀 및 경로 -->
+
+
+    <!-- 주요지원사업보기 상세조회인 경우  타이틀 및 경로 -->
+
+
+    <!-- 마감임박지원사업정보 상세조회인 경우  타이틀 및 경로 -->
+
+    <div>
+
+    <div class="h20 mb5">
+      <ul>
+        <li class="tr">
+
+
+
+          <a href="http://twitter.com/?status=2012%EB%85%84%EB%8F%84+%ED%88%AC%EC%9E%90%EC%97%B0%EA%B3%84+%EB%A9%98%ED%86%A0%EB%A7%81+%EC%B4%88%EA%B8%B0%EA%B8%B0%EC%97%85+%EA%B8%B0%EC%88%A0%EA%B0%9C%EB%B0%9C%EC%82%AC%EC%97%85+%EC%8B%9C%ED%96%89%EA%B3%84%ED%9A%8D+ http%3A%2F%2Fwww.bizinfo.go.kr%2FuserPolicyInfoView.do%3FpolicyInfoSerchTO.division%3D1%26tnPolicyInfoVO.policyCodeId%3D2012smbaa00000682" title="트위터(새창열림)" target="_blank"><img src="/images/common/icon/icon_twitter.gif" alt="트위터" /></a>
+          <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.bizinfo.go.kr%2FuserPolicyInfoView.do%3FpolicyInfoSerchTO.division%3D1%26tnPolicyInfoVO.policyCodeId%3D2012smbaa00000682" title="페이스북(새창열림)" target="_blank"><img src="/images/common/icon/icon_facebook.gif" alt="페이스북" /></a>
+          <a href="http://me2day.net/posts/new?new_post[body]=%222012%EB%85%84%EB%8F%84+%ED%88%AC%EC%9E%90%EC%97%B0%EA%B3%84+%EB%A9%98%ED%86%A0%EB%A7%81+%EC%B4%88%EA%B8%B0%EA%B8%B0%EC%97%85+%EA%B8%B0%EC%88%A0%EA%B0%9C%EB%B0%9C%EC%82%AC%EC%97%85+%EC%8B%9C%ED%96%89%EA%B3%84%ED%9A%8D+%22%3Ahttp%3A%2F%2Fwww.bizinfo.go.kr%2FuserPolicyInfoView.do%3FpolicyInfoSerchTO.division%3D1%26tnPolicyInfoVO.policyCodeId%3D2012smbaa00000682&new_post[tags]=%222012%EB%85%84%EB%8F%84+%ED%88%AC%EC%9E%90%EC%97%B0%EA%B3%84+%EB%A9%98%ED%86%A0%EB%A7%81+%EC%B4%88%EA%B8%B0%EA%B8%B0%EC%97%85+%EA%B8%B0%EC%88%A0%EA%B0%9C%EB%B0%9C%EC%82%AC%EC%97%85+%EC%8B%9C%ED%96%89%EA%B3%84%ED%9A%8D+%22%3A" title="미투데이(새창열림)" target="_blank"><img src="/images/common/icon/icon_me2day.gif" alt="미투데이" /></a>
+          <a href="http://yozm.daum.net/api/popup/prePost?prefix=2012%EB%85%84%EB%8F%84+%ED%88%AC%EC%9E%90%EC%97%B0%EA%B3%84+%EB%A9%98%ED%86%A0%EB%A7%81+%EC%B4%88%EA%B8%B0%EA%B8%B0%EC%97%85+%EA%B8%B0%EC%88%A0%EA%B0%9C%EB%B0%9C%EC%82%AC%EC%97%85+%EC%8B%9C%ED%96%89%EA%B3%84%ED%9A%8D+&link=http%3A%2F%2Fwww.bizinfo.go.kr%2FuserPolicyInfoView.do%3FpolicyInfoSerchTO.division%3D1%26tnPolicyInfoVO.policyCodeId%3D2012smbaa00000682" title="요즘(새창열림)" target="_blank"><img src="/images/common/icon/icon_yozm.gif" alt="요즘" /></a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="article">
+            <div class="h20 mb5">
+
+
+
+                <ul>
+
+
+
+
+
+
+
+
+
+                <li class="fl"><a href="/userPolicyInfoList.do?policyInfoSerchTO.lclasId=5000&amp;policyInfoSerchTO.mlsfcId=5100&amp;policyInfoSerchTO.sclasId=&amp;policyInfoSerchTO.division=1" onclick="javascript:go_List('1');return false;"><img src="/images/common/btn_b_list.gif" alt="목록" /></a></li>
+
+
+
+
+
+                    <li class="tr">
+            <a href="#a_comment" title="질의 및 의견"><img src="/images/common/btn_comment.gif" title="질의 및 의견" alt="질의 및 의견" /></a>
+            <a href="#" onclick="javascript:urlCopy();return false;"><img id="btn_copy" src="/images/common/icon_address.gif" title="주소복사" alt="주소복사" /></a>
+            <a href="#//" onclick="javascript:deliver();return false;" title="전달하기(새창열림)" target="_blank"><img src="/images/common/btn_sending.gif" title="전달하기(새창열림)" alt="전달하기" /></a>
+            <a href="#//" onclick="javascript:scrapThis();return false;" title="스크랩(새창열림)" target="_blank"><img src="/images/common/btn_scrap.gif" title="스크랩(새창열림)" alt="스크랩" /></a>
+            <a href="#//" onclick="javascript:go_print();return false;" title="프린트하기(새창열림)" target="_blank"><img src="/images/common/btn_print.gif" title="프린트하기(새창열림)" alt="프린트하기" /></a>
+          </li>
+                </ul>
+            </div>
+
+      <!-- view 항목 -->
+            <div class="bbs_a4">
+                <dl class="a_bg">
+                    <dt class="w100"><span class="icon_ball">지원사업명</span></dt>
+                    <dd class="w550">2012년도 투자연계 멘토링 초기기업 기술개발사업 시행계획 </dd>
+
+
+
+
+
+
+
+                    <dt class="w100 h72"><span class="icon_ball">분류체계</span></dt>
+                    <dd class="w550 ls_2 bb1">
+                      창업/벤처 &gt; 창업투자/보조금지원 &gt; 벤처캐피탈 투자
+
+                        <br/> 창업/벤처 &gt; 창업투자/보조금지원 &gt; 중소기업 모태조합 투자
+
+
+
+                        <br/> 기술 &gt; 단독기술개발 &gt; 기술혁신개발사업
+
+                    </dd>
+
+                    <dt class="w100 bn"><span class="icon_ball">신청기간</span></dt>
+                    <dd class="w217 bn">2012-06-12 ~ 2012-07-31</dd>
+                    <dt class="w100 bn"><span class="icon_ball">온라인접수</span></dt>
+                    <dd class="w218 bn">
+
+
+                      <!-- 현재 진행중인 사업에서만 사업신청이 가능하도록 변경 -->
+
+
+
+
+
+
+
+                  <a href="http://www.smtech.go.kr?spiChargerId=tipa" target="_blank" title="새창" onclick="javascript:goRegistPage('http://www.smtech.go.kr','tipa');return false;"><img src="/images/common/btn_onlineapp.gif" class="vm" alt="온라인사업신청하기" /></a>
+
+
+
+
+
+
+            <!-- 온라인 사업 신청 예정 시  -->
+
+
+                    </dd>
+                </dl>
+            </div>
+            <!-- view 항목 -->
+
+      <!-- 사업신청숙지내용 -->
+
+
+
+
+      <!-- 사업개요 -->
+            <h4 class="a_title">사업개요 </h4>
+            <div class="a_area3">
+                <div class="a_area3_top"></div>
+                <div class="a_area3_bg">
+       <ul >
+           <li class="icon_arr4">
+       초기기업의 사업화 성공률을 제고하기 위하여 엔젤투자 및 벤처캐피탈(Venture<br />Capital)의 투자참여와 더불어 1:1 멘토링을 조건으로 하여 기술개발비를 지원하는 사업<br />입니다.<br /><br /><strong><span style="color: #3366ff">&nbsp; ☞ 중소기업기본법 제 2조의 규정에 의한&nbsp; 창업 3년 이내 중소기업(법인)을 지원<br /></span></strong><br /><strong><span style="color: #3366ff">&nbsp; ☞&nbsp;엔젤투자 및 벤처캐피탈(Venture Capital)의 투자참여와&nbsp;더불어 1:1 멘토링을 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 조건으로 기술개발비를 지원<br /></span></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 총 사업비의 75%이내에서 최대 1년, 최대 2억원을 지원해 드립니다.
+           </li>
+         </ul>
+  </div>
+                <div class="a_area3_bot"></div>
+            </div>
+            <div class="hiddendtail" id="hiddendtail">
+               <font color="red">
+               [출처] Bizinfo 제공하는 지원사업정보입니다. (www.bizinfo.go.kr)
+               <br />
+               RSS 및 티커 서비스를 이용하시면 더 많은 정보를 이용할 수 있습니다.
+               <br />
+               </font>
+            </div>
+            <!-- 사업개요 -->
+
+      <!-- 지원분야대상 & 지원제외대상 -->
+            <h4 class="a_title">지원분야 및 대상</h4>
+            <div class="a_area3">
+                <div class="a_area3_top"></div>
+                <div class="a_area3_bg">
+                <ul >
+
+                   <li class="icon_arr4"><span class="blue8">지원분야대상</span><br />
+                    <p>ㅇ 지원대상<br />&nbsp; - 중소기업 : 창업 3년이내 중소기업(법인)<br />&nbsp; - 투자자 : 한국벤처캐피탈협회의 엔젤투자지원센터에 등록된 적격엔젤투자자, 엔젤<br />&nbsp;&nbsp;&nbsp; 클럽 및 벤처캐피탈<br />&nbsp;&nbsp;&nbsp; ㆍ적격엔젤투자자 : 최근 2년간 2건 이상 4천만원 이상의 신주 투자실적 보유한 자 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 또는 벤처기업 천억클럽, 코스닥 상장사 대표이사 경력이 있는 자 중 관련기관의&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 추천을 받은 자<br />&nbsp;&nbsp;&nbsp; ㆍ엔젤클럽 : 적격투자실적(2건 이상 4천만원 이상 또는 1건 1억원 이상 신주투자<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 실적) 보유 회원이 1인 이상인 클럽&nbsp;<br />&nbsp;&nbsp;&nbsp; ㆍ벤처캐피탈 : 창투사, 창업투자조합, 한국벤처투자조합<br /><br />ㅇ 기본 신청자격 <br />&nbsp; - 중소기업기본법 제2조의 규정에 의한 중소기업(창업 3년 이내, 법인)<br />&nbsp; * 업력기준 : 접수마감일 기준 신규법인설립일 또는 법인전환일로부터 3년 이내<br />&nbsp;&nbsp;&nbsp; ㆍ투자자 자격이 있는 투자자로부터 투자계약서 또는 투자의향서를 받은 기업<br />&nbsp;&nbsp;&nbsp; ㆍ2012년 중소기업 기술개발사업 지원제외 업종에 해당하는 기업은 제외<br />&nbsp;&nbsp;&nbsp; ㆍ자세한 지원제외 업종은 하단의 [첨부파일] 지원제외 업종분류표 참조</p>
+                   </li>
+
+                  <!-- 지원제외대상 -->
+
+                    <li class="icon_arr4 mt10"><span class="blue8">지원제외대상</span><br />
+                    ㅇ 사업에 참여하는 자(주관기관, 참여기업, 공동개발기관, 대표자, 과제책임자 등)가 <br />&nbsp;&nbsp;&nbsp; 다음의 어느 하나에 해당하는 경우<br />&nbsp; - 접수마감일 현재 사업별 의무사항(각종 보고서 제출, 기술료 납부, 정산금 또는 <br />&nbsp;&nbsp;&nbsp; 환수금 납부 등)을 불이행하고 있는 경우<br />&nbsp; - 국가연구개발사업에 참여제한 중인 경우<br />&nbsp; - 부도, 휴ㆍ폐업, 국세, 지방세 및 금융기관 채무불이행이 확인된 경우&nbsp;<br /><br />ㅇ&nbsp;사업에 참여하는 자의 자격이 신청자격에 맞지 않거나, 신청과제의 내용이 세부사업<br />&nbsp;&nbsp;&nbsp; 별 기본목적, 개발특성, 공고내용에 적합하지 않은 경우<br /><br />ㅇ 신청과제가 기 개발 되었거나, 이미 다른 기업이 지원받은 기술과 동일하거나, 또는 <br />&nbsp;&nbsp;&nbsp; 신청기업에 기 지원된 내용과 유사한 경우<br /><br />ㅇ 최근 1년 이내에 공정거래위원회로부터 공정거래법에 따른 인력부당 유인ㆍ채용&nbsp;<br />&nbsp;&nbsp;&nbsp; 불공정행위 위반자로 통보받은 경우<br /><br />ㅇ 신청과제의 내용이 사업의 기본목적, 개발특성, 공고내용에 적합하지 않거나 신청<br />&nbsp;&nbsp;&nbsp; 제한 요건에 해당하는 경우<br /><br />ㅇ 주관기관의 대표자 및 과제책임자 등이 접수마감일 기준으로 다음 중 어느 하나에 <br />&nbsp;&nbsp;&nbsp; 해당하는 경우<br />&nbsp; - 기업의 부도, 휴ㆍ폐업<br />&nbsp; - 금융기관 등의 채무불이행이 확인된 경우<br />&nbsp; - 부채비율이 1,000%이상인 경우(창업 2년 미만인 업체는 예외)<br />&nbsp; - 기업이 완전자본잠식 상태에 있는 경우<br />&nbsp; - 파산ㆍ회생절차ㆍ개인회생절차의 개시 신청이 이루어진 경우(단, 법원의 인가결정 <br />&nbsp;&nbsp;&nbsp; 공고를 받은 회생계획 또는 변제계획에 따른 채무변제를 정상적으로 이행하고 있는 <br />&nbsp;&nbsp;&nbsp; 경우와 창업 2년 미만인 업체는 예외)
+                   </li>
+
+                </ul>
+                </div>
+                <div class="a_area3_bot"></div>
+            </div>
+            <!-- 지원분야대상 & 지원제외대상 -->
+
+
+            <!-- 지원조건 및 내용 -->
+
+            <h4 class="a_title">지원조건 및 내용</h4>
+            <div class="a_area3">
+                <div class="a_area3_top"></div>
+                <div class="a_area3_bg">
+              <ul>
+                <!-- 예산내역 -->
+
+                <!-- 예산내역 -->
+
+                <!-- 지원한도 -->
+
+                <!-- 지원한도 -->
+
+                <!-- 대출금리 -->
+
+                <!-- 대출금리 -->
+
+                <!-- 융자기간 -->
+
+                <!-- 융자기간 -->
+
+                <!-- 신청기간 -->
+
+                <li class="icon_arr4 mt10"><span class="blue8">신청기간</span><br />
+                <span style="color: #ff0000">2012.6.12.(화)&sim;7.31.(화) 18:00까지</span>
+                  </li>
+
+                <!-- 신청기간 -->
+
+                <!-- 취급은행 -->
+
+                <!-- 취급은행 -->
+
+                <!-- 업체선정 -->
+
+                <li class="icon_arr4 mt10"><span class="blue8">업체선정</span><br /><p>ㅇ 요건심사 및 현장확인(8월)<br />&nbsp; - 신청기업 및 투자자의 자격요건 등 적합성 여부에 대한 요건심사 실시 후 신청기업의 <br />&nbsp;&nbsp;&nbsp; 재무현황, 인프라(연구인력, 보유시설) 등 현장확인<br /><br />ㅇ 대면평가(8월)<br />&nbsp; - 분야별 산ㆍ학ㆍ연 전문가로 평가위원회를 구성하여 신청기업의 R&amp;D 능력 및 기술<br />&nbsp;&nbsp;&nbsp; 성 등을 평가하고, 투자자에 대해서는 멘토링 프로그램을 평가하여 우선순위에 따라 <br />&nbsp;&nbsp;&nbsp; 심의조정위원회 대상과제 추천<br /><br />ㅇ 지원과제 선정(9월)<br />&nbsp; - 심의조정위원회는 종합평점 순위와 지원예산 규모 등을 고려하여 최종지원과제 및 <br />&nbsp;&nbsp;&nbsp; 정부출연금액을 심의하여 확정<br />&nbsp;&nbsp;&nbsp; ㆍ종합평점 = 사업계획서 평가점수(멘토링평가점수 포함)+우대배점-감점<br />&nbsp;&nbsp;&nbsp; ㆍ우대배점 및 감점관련 사항은 중소기업기술개발 지원사업 관리지침 참조<br /><br />ㅇ&nbsp;협약체결 및 정부지원금 지급(9월)<br />&nbsp; - 투자유치 완료기업에 대해 주관기관과 전문기관이 과제개발 협약체결 및 정부지원금 <br />&nbsp;&nbsp;&nbsp; 지급</p></li>
+
+                <!-- 업체선정 -->
+
+                <!-- 지원조건내용 -->
+
+                <li class="icon_arr4 mt10"><span class="blue8">지원조건내용</span><br />
+                <p>ㅇ 지원 규모 : 50억원<br /><br />ㅇ 정부출연금 :&nbsp;총 사업비의 75%이내에서 최대 1년, 최대 2억원 지원<br /><br />ㅇ 투자금 : 투자자는 과제당 5천만원 이상을 신주(보통주, 우선주)로 기업에 투자<br />&nbsp;&nbsp;&nbsp; (기술개발과제와 연계된 투자금은 기술개발 종료 후 1년간 투자금 회수 금지. 단, <br />&nbsp;&nbsp;&nbsp; 기술개발기간 종료 후 투자자간 거래는 인정)<br /><br />ㅇ 민간부담금 : 총사업비의 25%이상(민간부담금의 20%이상은 현금)<br /><br />ㅇ 기술료 납부<br />&nbsp; - 기술개발 결과에 대한 최종평가가 &lsquo;성공&rsquo; 또는 &lsquo;성실수행&rsquo;으로 판정될 경우, 판정일<br />&nbsp;&nbsp;&nbsp; 로부터 3년 이내에 정부출연금의 20%를 납부<br />&nbsp;&nbsp;&nbsp; ㆍ현금 일시납 원칙, 지급이행보증보험 가입을 조건으로 3년간 분할납부 가능</p>
+                </li>
+
+                <!-- 지원조건내용 -->
+                </ul>
+            </div>
+
+            <!-- 지원조건 및 내용 -->
+                <div class="a_area3_bot"></div>
+            </div>
+            <div class="hiddendtail" id="hiddendtail">
+              <font color="red">
+               [출처] Bizinfo 제공하는 지원사업정보입니다. (www.bizinfo.go.kr)
+               <br />
+               RSS 및 티커 서비스를 이용하시면 더 많은 정보를 이용할 수 있습니다.
+               <br />
+               </font>
+            </div>
+      <!-- 지원절차 -->
+
+            <h4 class="a_title">지원절차</h4>
+            <div class="a_area3">
+                <div class="a_area3_top"></div>
+                <div class="a_area3_bg">
+                    <ul class="a_pro ">
+                        <li class="icon_arr4"><!--StartFragment--><p class="바탕글"><table style="border-bottom: #000000 0pt solid; border-left: #000000 0pt solid; border-collapse: collapse; border-top: #000000 0pt solid; border-right: #000000 0pt solid"><tbody><tr><td valign="middle" style="border-bottom: medium none; border-left: medium none; width: 24.64pt; height: 46.78pt; border-top: medium none; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 1.41pt solid; width: 163.31pt; background: #fff4ce; height: 46.78pt; border-top: #000000 1.41pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">신청/접수</span><br /><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">(온라인, 사업계획서<br />+멘토계획)</span></p></td><td valign="middle" style="border-bottom: medium none; border-left: #000000 1.41pt solid; width: 24.64pt; height: 46.78pt; border-top: medium none; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">&rarr;</span></p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 1.41pt solid; width: 163.31pt; background: #fff4ce; height: 46.78pt; border-top: #000000 1.41pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">요건심사</span><br /><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">(전문기관, 운영기관)</span></p></td><td valign="middle" style="border-bottom: medium none; border-left: #000000 1.41pt solid; width: 24.64pt; height: 46.78pt; border-top: medium none; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">&rarr;</span></p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 1.41pt solid; width: 163.31pt; background: #fff4ce; height: 46.78pt; border-top: #000000 1.41pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">현장확인</span><br /><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">(관리기관)</span></p></td></tr><tr><td valign="middle" style="border-bottom: medium none; border-left: medium none; width: 24.64pt; height: 15.65pt; border-top: medium none; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: medium none; width: 163.31pt; height: 15.65pt; border-top: #000000 1.41pt solid; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td><td valign="middle" style="border-bottom: medium none; border-left: medium none; width: 24.64pt; height: 15.65pt; border-top: medium none; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: medium none; width: 163.31pt; height: 15.65pt; border-top: #000000 1.41pt solid; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td><td valign="middle" style="border-bottom: medium none; border-left: medium none; width: 24.64pt; height: 15.65pt; border-top: medium none; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: medium none; width: 163.31pt; height: 15.65pt; border-top: #000000 1.41pt solid; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td></tr><tr><td valign="middle" style="border-bottom: medium none; border-left: medium none; width: 24.64pt; height: 46.78pt; border-top: medium none; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">&rarr;</span></p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 1.41pt solid; width: 163.31pt; background: #fff4ce; height: 46.78pt; border-top: #000000 1.41pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">대면평가</span><br /><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">(전문기관)</span></p></td><td valign="middle" style="border-bottom: medium none; border-left: #000000 1.41pt solid; width: 24.64pt; height: 46.78pt; border-top: medium none; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">&rarr;</span></p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 1.41pt solid; width: 163.31pt; background: #fff4ce; height: 46.78pt; border-top: #000000 1.41pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">지원후보 선정</span><br /><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">(심의조정위원회)</span></p></td><td valign="middle" style="border-bottom: medium none; border-left: #000000 1.41pt solid; width: 24.64pt; height: 46.78pt; border-top: medium none; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">&rarr;</span></p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 1.41pt solid; width: 163.31pt; background: #fff4ce; height: 46.78pt; border-top: #000000 1.41pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">적격투자 이행 확인,<br />멘토링 협약 등</span><br /><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">(운영기관)</span></p></td></tr><tr><td valign="middle" style="border-bottom: medium none; border-left: medium none; width: 24.64pt; height: 15.65pt; border-top: medium none; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: medium none; width: 163.31pt; height: 15.65pt; border-top: #000000 1.41pt solid; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td><td valign="middle" style="border-bottom: medium none; border-left: medium none; width: 24.64pt; height: 15.65pt; border-top: medium none; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: medium none; width: 163.31pt; height: 15.65pt; border-top: #000000 1.41pt solid; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td><td valign="middle" style="border-bottom: medium none; border-left: medium none; width: 24.64pt; height: 15.65pt; border-top: medium none; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td><td valign="middle" style="border-bottom: medium none; border-left: medium none; width: 163.31pt; height: 15.65pt; border-top: #000000 1.41pt solid; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td></tr><tr><td valign="middle" style="border-bottom: medium none; border-left: medium none; width: 24.64pt; height: 46.78pt; border-top: medium none; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">&rarr;</span></p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 1.41pt solid; width: 163.31pt; background: #fff4ce; height: 46.78pt; border-top: #000000 1.41pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">협약 및 자금지원</span><br /><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">(전문기관)</span></p></td><td valign="middle" style="border-bottom: medium none; border-left: #000000 1.41pt solid; width: 24.64pt; height: 46.78pt; border-top: medium none; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">&rarr;</span></p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 1.41pt solid; width: 163.31pt; background: #fff4ce; height: 46.78pt; border-top: #000000 1.41pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">성장멘토링 및 <br />진도관리</span><br /><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">(운영기관, 관리기관)</span></p></td><td valign="middle" style="border-bottom: medium none; border-left: #000000 1.41pt solid; width: 24.64pt; height: 46.78pt; border-top: medium none; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char">&nbsp;</p></td><td valign="middle" style="border-bottom: medium none; border-left: medium none; width: 163.31pt; height: 46.78pt; border-top: medium none; border-right: medium none"><p class="바탕글" style="text-align: center; line-height: 120%; layout-grid-mode: char"><br /><br />&nbsp;</p></td></tr></tbody></table>*&nbsp; (관리기관)지방중소기업청, (전문기관)중소기업기술정보진흥원,&nbsp;(운영기관)한국벤처<br />&nbsp;&nbsp;&nbsp; 캐피탈협회</p></li>
+                    </ul>
+                </div>
+                <div class="a_area3_bot"></div>
+            </div>
+
+
+            <!-- 신청방법 및 서류 -->
+
+            <h4 class="a_title">신청방법 및 서류</h4>
+            <div class="a_area3">
+                <div class="a_area3_top"></div>
+                <div class="a_area3_bg">
+                    <ul>
+
+                      <!-- 신청방법 -->
+                        <li class="icon_arr4"><span class="blue8">신청방법</span><br />
+                          ㅇ 온라인을 통한 사업계획서 제출<br />&nbsp; -&nbsp;신청기간 내 중소기업은 투자자의 투자의향서 또는 체결된 투자계약서, 투자자의<br />&nbsp;&nbsp;&nbsp; 멘토링 계획서를 포함하여 온라인으로 제출<br /><br />&nbsp; - 종합관리시스템(<a target="_blank" title='새창열림' href="http://www.smtech.go.kr"><span style="color: #0000ff">http://www.smtech.go.kr</span></a>) &rarr; 회원가입 &rarr; 로그인 &rarr; 과제관리 &rarr; <br />&nbsp;&nbsp;&nbsp; 과제신청 &rarr; 지원사업 선택 후, 온라인 내용입력 및 사업계획서 등록
+                        </li>
+                        <!-- 신청방법 -->
+
+
+
+                        <!-- 신청서류 -->
+                        <li class="icon_arr4 mt10"><span class="blue8">신청서류</span><br />
+                          <!--StartFragment--><p class="바탕글"><table style="border-bottom: #000000 0.28pt solid; border-left: #000000 0.28pt solid; border-collapse: collapse; border-top: #000000 0.28pt solid; border-right: #000000 0.28pt solid"><tbody><tr><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 1.41pt solid; width: 77.4pt; background: #fff4ce; height: 28.97pt; border-top: #000000 1.41pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 130%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">연번</span></p></td><td valign="middle" colspan="2" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 361.46pt; background: #fff4ce; height: 28.97pt; border-top: #000000 1.41pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 130%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">서식 명</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 147.55pt; background: #fff4ce; height: 28.97pt; border-top: #000000 1.41pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 130%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">비 고</span></p></td></tr><tr><td valign="middle" rowspan="3" style="border-bottom: #000000 0.56pt solid; border-left: #000000 1.41pt solid; width: 77.4pt; height: 44.46pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">①</span></p></td><td valign="middle" rowspan="3" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 141.02pt; height: 44.46pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 130%; layout-grid-mode: char; margin-left: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">중소기업기술개발</span></p><p class="바탕글" style="line-height: 130%; layout-grid-mode: char; margin-left: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">사업계획서 </span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 220.44pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 100%; layout-grid-mode: char; margin-left: 6pt"><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">Part Ⅰ</span><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">(온라인 시스템 직접입력)</span></p></td><td valign="middle" rowspan="3" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 147.55pt; height: 44.46pt; border-top: #000000 0.56pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">필 수</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 220.44pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 100%; layout-grid-mode: char; margin-left: 6pt"><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">Part Ⅱ 사업계획서</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 220.44pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 100%; layout-grid-mode: char; margin-left: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">멘토링 계획서</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 1.41pt solid; width: 77.4pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">②</span></p></td><td valign="middle" colspan="2" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 361.46pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 100%; layout-grid-mode: char; margin-left: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">중소기업 경영현황표</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 147.55pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">필 수</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 1.41pt solid; width: 77.4pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">③</span></p></td><td valign="middle" colspan="2" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 361.46pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 100%; layout-grid-mode: char; margin-left: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">사업비 비목별 소요명세</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 147.55pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">필 수</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 1.41pt solid; width: 77.4pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">④</span></p></td><td valign="middle" colspan="2" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 361.46pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 100%; layout-grid-mode: char; margin-left: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">신용상태 조회 동의서</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 147.55pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">필 수</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 1.41pt solid; width: 77.4pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">⑤</span></p></td><td valign="middle" colspan="2" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 361.46pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 100%; layout-grid-mode: char; margin-left: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">중소기업 기술개발사업 청렴 서약서</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 147.55pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">필 수</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 1.41pt solid; width: 77.4pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">⑥</span></p></td><td valign="middle" colspan="2" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 361.46pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 100%; layout-grid-mode: char; margin-left: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">신청기업 확약서</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 147.55pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">필 수</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 1.41pt solid; width: 77.4pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">⑦</span></p></td><td valign="middle" colspan="2" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 361.46pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 100%; layout-grid-mode: char; margin-left: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">투자계약서 또는 투자의향서</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 147.55pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">필 수</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 1.41pt solid; width: 77.4pt; height: 2.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">⑧</span></p></td><td valign="middle" colspan="2" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 361.46pt; height: 2.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 100%; layout-grid-mode: char; margin-left: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">법인 등기부 등본(스캔하여 첨부)</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 147.55pt; height: 2.82pt; border-top: #000000 0.56pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">필 수</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 1.41pt solid; width: 77.4pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">⑨</span></p></td><td valign="middle" colspan="2" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 361.46pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 100%; layout-grid-mode: char; margin-left: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">연구기자재 구입계획서</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 147.55pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">해당시</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 1.41pt solid; width: 77.4pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">⑩</span></p></td><td valign="middle" colspan="2" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 361.46pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 100%; layout-grid-mode: char; margin-left: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">위탁연구기관(참여기업) 참여의사 확인서</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 147.55pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">해당시</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 1.41pt solid; width: 77.4pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">⑪</span></p></td><td valign="middle" colspan="2" style="border-bottom: #000000 1.41pt solid; border-left: #000000 0.56pt solid; width: 361.46pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="line-height: 100%; layout-grid-mode: char; margin-left: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">배우자 및 직계존비속 참여연구원 등록요청서</span></p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 0.56pt solid; width: 147.55pt; height: 14.82pt; border-top: #000000 0.56pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 100%; layout-grid-mode: char"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">해당시</span></p></td></tr></tbody></table></p>
+                        </li>
+                        <!-- 신청서류 -->
+
+                    </ul>
+                </div>
+                <div class="a_area3_bot"></div>
+            </div>
+
+            <!-- 신청방법 및 서류 -->
+            <div class="hiddendtail" id="hiddendtail">
+               <font color="red">
+               [출처] Bizinfo 제공하는 지원사업정보입니다. (www.bizinfo.go.kr)
+               <br />
+               RSS 및 티커 서비스를 이용하시면 더 많은 정보를 이용할 수 있습니다.
+               <br />
+               </font>
+            </div>
+
+      <!-- 주관기관 담당부서 및 담당자 -->
+            <h4 class="a_title">주관기관 담당부서 및 담당자 </h4>
+            <div class="a_area3">
+                <div class="a_area3_top"></div>
+                <div class="a_area3_bg">
+          <table class="tb_otherList4 w655" summary="주관기관 담당부서 및 담당자 : 주관기관,담당부서,전화번호,홈페이지주소,담당자명,담당자유선전화,담당자팩스,담당자이메일 정보를 알 수 있습니다." cellspacing="0">
+                  <caption>주관기관 담당부서 및 담당자</caption>
+                  <colgroup>
+                  <col width="20%" />
+                  <col width="30%" />
+                  <col width="20%" />
+                  <col width="30%" />
+                  </colgroup>
+                  <tbody>
+                      <tr>
+                        <th class="w20p_12">주관기관</th>
+                          <td class="w30p_12">중소기업기술정보진흥원</td>
+                       <th class="w20p_12">담당부서</th>
+                       <td class="w30p_12">R&amp;D 콜센터</td>
+                   </tr>
+                   <tr>
+                     <th class="w20p_12">전화번호</th>
+                       <td class="w30p_12">1661-1357(내선 2)</td>
+                       <th class="w20p_12">홈페이지 URL</th>
+                       <td class="w30p_12"><a href="http://www.tipa.or.kr/" target="_blank" title="새창열림">http://www.tipa.or.kr/</a></td>
+                   </tr>
+                   <tr>
+                     <th class="w20p_12">담당자명</th>
+                       <td class="w30p_12">사업 담당자</td>
+                       <th class="w20p_12">담당자 전화</th>
+                       <td class="w30p_12">1661-1357(내선 2)</td>
+                   </tr>
+                   <tr>
+                     <th class="w20p_12">담당자 FAX</th>
+                       <td class="w30p_12"></td>
+                       <th class="w20p_12">담당자 이메일</th>
+                       <td class="w30p_12"></td>
+                   </tr>
+                   </tbody>
+                   </table>
+                 </div>
+               <div class="a_area3_bot"></div>
+           </div>
+
+           <!-- 주관기관 담당부서 및 담당자 -->
+
+
+         <!-- 접수기관 담당부서 및 담당자 -->
+             <h4 class="a_title">접수기관 담당부서 및 담당자</h4>
+             <div class="a_area3">
+                 <div class="a_area3_top"></div>
+                 <div class="a_area3_bg">
+           <table class="tb_otherList4 w655" summary="접수기관 담당부서 및 담당자 : 접수기관,담당부서,전화번호,홈페이지주소,담당자명,담당자유선전화,담당자팩스,담당자이메일 정보를 알 수 있습니다." cellspacing="0">
+                 <caption>접수기관 담당부서 및 담당자<</caption>
+                 <colgroup>
+                 <col width="20%" />
+                 <col width="30%" />
+                 <col width="20%" />
+                 <col width="30%" />
+                 </colgroup>
+                 <tbody>
+                     <tr>
+                       <th class="w20p_12">접수기관</th>
+                         <td class="w30p_12">중소기업기술정보진흥원</td>
+                       <th class="w20p_12">담당부서</th>
+                       <td class="w30p_12">R&amp;D 콜센터</td>
+                   </tr>
+                   <tr>
+                     <th class="w20p_12">전화번호</th>
+                       <td class="w30p_12">1661-1357(내선 2)</td>
+                       <th class="w20p_12">홈페이지 URL</th>
+                       <td class="w30p_12"><a href="http://www.tipa.or.kr/"  target="_blank" title="새창열림">http://www.tipa.or.kr/</a></td>
+                   </tr>
+                   <tr>
+                     <th class="w20p_12">담당자명</th>
+                       <td class="w30p_12">사업 담당자</td>
+                       <th class="w20p_12">담당자 전화</th>
+                       <td class="w30p_12">1661-1357(내선 2)</td>
+                   </tr>
+                   <tr>
+                     <th class="w20p_12">담당자 FAX</th>
+                       <td class="w30p_12"></td>
+                       <th class="w20p_12">담당자 이메일</th>
+                       <td class="w30p_12"> </td>
+                   </tr>
+               </tbody>
+               </table>
+               </div>
+               <div class="a_area3_bot"></div>
+            </div>
+            <!-- 접수기관 담당부서 및 담당자 -->
+
+
+
+
+      <div class="hiddendtail" id="hiddendtail">
+      <font color="red">
+               [출처] Bizinfo 제공하는 지원사업정보입니다. (www.bizinfo.go.kr)
+               <br />
+               RSS 및 티커 서비스를 이용하시면 더 많은 정보를 이용할 수 있습니다.
+               <br />
+               </font>
+            </div>
+      <!-- 기타사항 -->
+
+          <h4 class="a_title">기타사항</h4>
+          <div class="a_area3">
+              <div class="a_area3_top"></div>
+              <div class="a_area3_bg">
+                  <ul>
+                    <!-- 문의처 -->
+
+                      <li class="icon_arr4"><span class="blue8">문의처</span><br /><!--StartFragment--><p class="바탕글"><table style="border-bottom: #000000 0.28pt solid; border-left: #000000 0.28pt solid; border-collapse: collapse; border-top: #000000 0.28pt solid; border-right: #000000 0.28pt solid"><tbody><tr><td valign="middle" colspan="2" style="border-bottom: #000000 0.56pt solid; border-left: #000000 1.41pt solid; width: 268.24pt; background: #fff4ce; height: 31.8pt; border-top: #000000 1.41pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 150%; layout-grid-mode: char; margin-left: 6pt; margin-right: 6pt"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">담당기관</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 95.7pt; background: #fff4ce; height: 31.8pt; border-top: #000000 1.41pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 150%; layout-grid-mode: char; margin-left: 6pt; margin-right: 6pt"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">전 화</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 223.61pt; background: #fff4ce; height: 31.8pt; border-top: #000000 1.41pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 150%; layout-grid-mode: char; margin-left: 6pt; margin-right: 6pt"><span style="font-family: 굴림; font-size: 12pt; font-weight: bold; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">문의사항</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 1.41pt solid; width: 175.15pt; height: 47.32pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 150%; layout-grid-mode: char; margin-left: 4pt; margin-right: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">중소기업<br />기술정보진흥원<br /></span><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">(전문기관)</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 93.09pt; height: 47.32pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 150%; layout-grid-mode: char; margin-left: 4pt; margin-right: 6pt"><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">R&amp;D 콜센터</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 95.7pt; height: 47.32pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 150%; layout-grid-mode: char; margin-left: 7.4pt; margin-right: 6pt"><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">1661-1357</span><br /><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">(내선 2)</span></p></td><td valign="middle" style="border-bottom: #000000 0.56pt solid; border-left: #000000 0.56pt solid; width: 223.61pt; height: 47.32pt; border-top: #000000 0.56pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 150%; layout-grid-mode: char; margin-left: 6pt; margin-right: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">신청ㆍ접수 및 향후일정 등</span></p></td></tr><tr><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 1.41pt solid; width: 175.15pt; height: 47.32pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 150%; layout-grid-mode: char; margin-left: 4pt; margin-right: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">한국벤처캐피탈협회</span><br /><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">(운영기관)</span></p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 0.56pt solid; width: 93.09pt; height: 47.32pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 150%; layout-grid-mode: char; margin-left: 4pt; margin-right: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">투자지원팀</span></p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 0.56pt solid; width: 95.7pt; height: 47.32pt; border-top: #000000 0.56pt solid; border-right: #000000 0.56pt solid"><p class="바탕글" style="text-align: center; line-height: 150%; layout-grid-mode: char; margin-left: 7.4pt; margin-right: 6pt"><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">02-2156-2134</span></p><p class="바탕글" style="text-align: center; line-height: 150%; layout-grid-mode: char; margin-left: 7.4pt; margin-right: 6pt"><span lang="EN-US" style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-fareast-font-family: 굴림">02-2156-2135</span></p></td><td valign="middle" style="border-bottom: #000000 1.41pt solid; border-left: #000000 0.56pt solid; width: 223.61pt; height: 47.32pt; border-top: #000000 0.56pt solid; border-right: #000000 1.41pt solid"><p class="바탕글" style="text-align: center; line-height: 150%; layout-grid-mode: char; margin-left: 6pt; margin-right: 6pt"><span style="font-family: 굴림; font-size: 12pt; mso-hansi-font-family: 굴림; mso-ascii-font-family: 굴림">투자자 자격, 적격투자자 이행확인 및 멘토링 등</span></p></td></tr></tbody></table></p></li>
+
+                      <!-- 문의처 -->
+
+                      <!-- 기타사항 -->
+
+                      <li class="icon_arr4 mt10"><span class="blue8">기타사항</span><br /><strong>※ 자세한 사항은 중소기업청(</strong><a target="_blank" title='새창열림' href="http://www.smba.go.kr"><strong><span style="color: #0000ff">http://www.smba.go.kr</span></strong></a><strong>) &rarr; 행정정보 &rarr; 법령정보 &rarr;<br />&nbsp;&nbsp;&nbsp; 고시/공고/훈령 &rarr; 공고 게시물을 참조(</strong><a target="_blank" title='새창열림' href="http://www.smba.go.kr/user.tdf?a=user.board.BoardApp&amp;c=2002&amp;seq=36572&amp;board_id=SMBA_PUBLIC_14&amp;cp=1&amp;pg=1&amp;npp=10&amp;mc=SMBA_PUBLIC_13&amp;skin=&amp;ctx=&amp;re_level=0&amp;re_step=169599&amp;basic="><strong><span style="color: #0000ff">☞바로가기</span></strong></a><strong>)</strong></li>
+
+                      <!-- 기타사항 -->
+                  </ul>
+              </div>
+              <div class="a_area3_bot"></div>
+          </div>
+
+          <!-- 기타사항 -->
+
+      <!-- 첨부문서 -->
+          <h4 class="a_title">첨부문서</h4>
+          <div class="a_area3">
+              <div class="a_area3_top"></div>
+              <div class="a_area3_bg">
+                  <table class="tb_otherList4 w655" summary="첨부문서: 서식첨부파일,참고자료첨부파일을 다운로드 받을수 있습니다." cellspacing="0">
+                  <caption>첨부문서</caption>
+                  <colgroup>
+                  <col width="20%" />
+                  <col />
+                  </colgroup>
+                  <tbody>
+                      <tr>
+                        <th class="w20p_12">서식첨부파일</th>
+                          <td>
+
+                          </td>
+                      </tr>
+                      <tr>
+                        <th class="w20p_12">참고첨부파일</th>
+                          <td>
+
+                              <ul>
+
+
+                                <li class="icon_arr4"><a href="/download?path=/addfile/form/&amp;filename=(제2012-143호)2012년도 투자연계 멘토링 초기기업 기술개발사업 시행계획 공고.hwp&amp;realfilenm=1338274575620.hwp" onclick="javascript:callFileDown('/addfile/form/','(제2012-143호)2012년도 투자연계 멘토링 초기기업 기술개발사업 시행계획 공고.hwp','1338274575620.hwp');return false;" class="text_p12_01 TEXT_LINK_A">(제2012-143호)2012년도 투자연계 멘토링 초기기업 기술개발사업 시행계획 공고</a>&nbsp;<img src="/spi/images/bt_hwp.gif" alt="(제2012-143호)2012년도 투자연계 멘토링 초기기업 기술개발사업 시행계획 공고.hwp 파일" border="0" /></li>
+
+                                </ul>
+
+                          </td>
+                      </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div class="a_area3_bot"></div>
+         </div>
+       <!-- 첨부문서 -->
+
+      <!--정책 질의/의견함 -->
+
+
+
+
+
+
+<script type="text/javascript">
+var thisForm = document.userPolicyInfoListForm;
+//<![CDATA[
+function goRefresh(mode) {
+  if (mode == 'I')
+    alert('등록 되었습니다.');
+  else if (mode == 'D')
+    alert('삭제 되었습니다.');
+  else if (mode == 'R')
+    alert('추천 되었습니다.');
+  else if (mode == 'T')
+    alert('신고 되었습니다.');
+  else if (mode == 'M')
+    alert('수정 되었습니다.');
+
+
+  thisForm.action = "/userPolicyInfoView.do";
+
+  thisForm.submit();
+}
+
+function deleteProcess() {
+  thisForm.target= "opinionFr";
+  thisForm.action = "/opinionBoardDeleteProcess.do";
+  thisForm.submit();
+  thisForm.target = "";
+
+
+  thisForm.action = "/userPolicyInfoView.do";
+
+
+}
+
+// 질문/의견/답변 삭제
+function goDelete(opinionNo) {
+
+  if (confirm('삭제 하시겠습니까?')) {
+    thisForm.opinionNo.value = opinionNo;
+    deleteProcess();
+  }
+}
+
+// 질문/의견 등록
+function goRegist() {
+
+  if(thisForm.id.value == " ") {
+    alert("로그인후에 이용이 가능합니다.");
+    var pUrl = "/loginPop.do";
+    wwidth =465;
+     wheight = 250;
+     var wleft = (screen.width-wwidth)/2;
+     var wtop = (screen.height-wheight)/2;
+     window.open(pUrl, 'rawWin', 'resizable=no, scrollbars=yes, status=no, width='+wwidth+', height='+wheight+', top='+wtop+',left='+wleft + '');
+     return;
+  }
+  document.getElementById('opinionCn').maxLength= 2000;//최대값 설정
+
+  if(!checkInput(thisForm.opinionCn, _VCODE_ALL_OK, "질문 혹은 의견")) return;
+
+  document.getElementById('dupchk').style.display="none";
+  thisForm.groupId.value = "";
+  thisForm.opinionAnCn.value = "";
+
+  thisForm.target= "opinionFr";
+  thisForm.action = "/opinionBoardRegistProcess.do";
+  thisForm.submit();
+  thisForm.target = "";
+
+
+  thisForm.action = "/userPolicyInfoView.do";
+
+}
+
+//답변 등록
+function goRegistAnswer(no,division) {
+
+  if(thisForm.id.value == " ") {
+    alert("로그인후에 이용이 가능합니다.");
+    var pUrl = "/loginPop.do";
+    wwidth =465;
+     wheight = 250;
+     var wleft = (screen.width-wwidth)/2;
+     var wtop = (screen.height-wheight)/2;
+     window.open(pUrl, 'rawWin', 'resizable=no, scrollbars=yes, status=no, width='+wwidth+', height='+wheight+', top='+wtop+',left='+wleft + '');
+     return;
+  }
+
+  var opinionCn_obj = eval("document.userPolicyInfoListForm.answerCn_" + no);
+  //alert(opinionCn_obj);
+  if(!checkInput(opinionCn_obj, _VCODE_ALL_OK, "답변")) return;
+
+  thisForm.groupId.value = no;
+  //alert('groupId ==> ' + thisForm.groupId.value);
+  thisForm.opinionAnCn.value = opinionCn_obj.value;
+  //alert('opinionCn ==> ' + thisForm.opinionAnCn.value);
+  thisForm.division_Re.value = division;
+  document.getElementById("dupchk_" + no).style.display="none";
+
+  thisForm.target= "opinionFr";
+  thisForm.action = "/opinionBoardRegistProcess.do";
+  thisForm.submit();
+  thisForm.target = "";
+
+
+  thisForm.action = "/userPolicyInfoView.do";
+
+}
+
+//신고하기
+function goReport(opinionNo) {
+
+  if(thisForm.id.value == " ") {
+    alert("로그인후에 이용이 가능합니다.");
+    var pUrl = "/loginPop.do";
+    wwidth =465;
+     wheight = 250;
+     var wleft = (screen.width-wwidth)/2;
+     var wtop = (screen.height-wheight)/2;
+     window.open(pUrl, 'rawWin', 'resizable=no, scrollbars=yes, status=no, width='+wwidth+', height='+wheight+', top='+wtop+',left='+wleft + '');
+     return;
+  }
+
+  if (confirm('올바르지 않은 게시물로 신고 하시겠습니까?')) {
+    thisForm.opinionNo.value = opinionNo;
+    thisForm.target= "opinionFr";
+    thisForm.action = "/opinionBoardReportProcess.do";
+    thisForm.submit();
+    thisForm.target = "";
+
+
+    thisForm.action = "/userPolicyInfoView.do";
+
+  }
+
+}
+
+//추천하기
+function goRecom(opinionNo) {
+
+  if(thisForm.id.value == " ") {
+    alert("로그인후에 이용이 가능합니다.");
+    var pUrl = "/loginPop.do";
+    wwidth =465;
+     wheight = 250;
+     var wleft = (screen.width-wwidth)/2;
+     var wtop = (screen.height-wheight)/2;
+     window.open(pUrl, 'rawWin', 'resizable=no, scrollbars=yes, status=no, width='+wwidth+', height='+wheight+', top='+wtop+',left='+wleft + '');
+     return;
+  }
+
+  if (confirm('추천하시겠습니까?')) {
+    thisForm.opinionNo.value = opinionNo;
+    thisForm.target= "opinionFr";
+    thisForm.action = "/opinionBoardRecomProcess.do";
+    thisForm.submit();
+    thisForm.target = "";
+
+
+    thisForm.action = "/userPolicyInfoView.do";
+
+  }
+
+}
+
+// 답변 폼 보여주기
+function viewForm(no, cnt) {
+
+  if(cnt > 2){
+    alert("답변은 3개까지만 가능합니다.");
+  }else{
+    if(document.getElementById("opi_answr_"+no).style.display == "none"){
+      document.getElementById("opi_answr_"+no).style.display="block";
+    }else{
+      document.getElementById("opi_answr_"+no).style.display="none";
+    }
+  }
+  jQuery("#dupchk_"+no).html("<a href=\"#\" onclick=\"javascript:goRegistAnswer('"+no+"','R');return false;\"><img src=\"/images/common/opi_btn_ok.gif\" alt=\"확인\" border=\"0\"  /></a>");
+  jQuery("#answrbutten_"+no).html("<img src=\"/images/common/opi_answr.gif\" alt=\"답변\" class=\"opi_answr\" />");
+}
+
+
+function opiviewForm(no, cnt) {
+  if(document.getElementById("opi_answr_"+no).style.display == "none"){
+    document.getElementById("opi_answr_"+no).style.display="block";
+  }else{
+    document.getElementById("opi_answr_"+no).style.display="none";
+  }
+}
+function comForm(no) {
+
+  if(document.getElementById("opi_answr_"+no).style.display == "none"){
+    document.getElementById("opi_answr_"+no).style.display="block";
+  }else{
+    document.getElementById("opi_answr_"+no).style.display="none";
+  }
+  jQuery("#dupchk_"+no).html("<a href=\"#\" onclick=\"javascript:goRegistAnswer('"+no+"','S');return false;\"><img src=\"/images/common/opi_btn_ok.gif\" alt=\"확인\" border=\"0\"  /></a>");
+  jQuery("#answrbutten_"+no).html("<img src=\"/images/common/opi_o_answr.gif\" alt=\"의견\" class=\"opi_answr\" />");
+}
+
+
+//수정 폼 보여주기
+function modifyForm(no) {
+  if(document.getElementById("modifyForm_"+no).style.display == "none")
+      document.getElementById("modifyForm_"+no).style.display="block";
+    else
+      document.getElementById("modifyForm_"+no).style.display="none";
+}
+
+
+
+//수정등록
+function goModify(no) {
+
+  if(thisForm.id.value == " ") {
+    alert("로그인후에 이용이 가능합니다.");
+    var pUrl = "/loginPop.do";
+    wwidth =465;
+     wheight = 250;
+     var wleft = (screen.width-wwidth)/2;
+     var wtop = (screen.height-wheight)/2;
+     window.open(pUrl, 'rawWin', 'resizable=no, scrollbars=yes, status=no, width='+wwidth+', height='+wheight+', top='+wtop+',left='+wleft + '');
+     return;
+  }
+
+
+  var opinionCn_obj = eval("document.userPolicyInfoListForm.modifyCn_" + no);
+  if(!checkInput(opinionCn_obj, _VCODE_ALL_OK, "수정")) return;
+
+  thisForm.groupId.value = no;
+
+  thisForm.opinionAnCn.value = opinionCn_obj.value;
+  thisForm.opinionNo.value = no;
+  document.getElementById("modifychk_" + no).style.display="none";
+
+  thisForm.target= "opinionFr";
+  thisForm.action = "/opinionBoardModifyProcess.do";
+  thisForm.submit();
+  thisForm.target = "";
+
+
+  thisForm.action = "/userPolicyInfoView.do";
+
+
+}
+function winOpen(counsid) {
+
+  window.open('http://link.bizinfo.go.kr/consultant/consultant_view_search.jsp?mod=V&counsid='+counsid,'new','toolbar=no, scrollbars=1, resizabe=no,left=10,top=10,width=800,height=650');
+  return false;
+}
+
+
+//]]>
+</script>
+<!-- 정책의견함 관련 -->
+
+
+<a name="#a_comment"></a>
+<div class="opinion2" id="opinion">
+  <div class="opi_top"></div>
+  <div class="opi_bg">
+    <h5 class="mb5">질의 및 의견</h5>
+    <fieldset>
+    <input type="hidden" name="loginMemberInfoVO.id" value=" " id="id" />
+    <input type="hidden" name="loginMemberInfoVO.mberSe" value="" id="mberSe" />
+
+
+    <input type="hidden" name="opinionBoardSearchTO.manageId" value="TQO" id="manageId" />
+    <input type="hidden" name="opinionBoardSearchTO.relateId" value="2012smbaa00000682" id="relateId" />
+    <input type="hidden" name="opinionBoardSearchTO.policyClId" value="5000" id="policyClId" />
+
+    <input type="hidden" name="tnOpinionBoardVO.registId" value="" />
+    <input type="hidden" name="tnOpinionBoardVO.manageId" value="" id="vManageId" />
+    <input type="hidden" name="tnOpinionBoardVO.relateId" value="" id="vRelateId" />
+    <input type="hidden" name="tnOpinionBoardVO.opinionNo" value="" id="opinionNo" />
+    <input type="hidden" name="tnOpinionBoardVO.groupId" value="" id="groupId" />
+    <input type="hidden" name="tnOpinionBoardVO.step" value="" id="step" />
+    <input type="hidden" name="tnOpinionBoardVO.sortOrdr" value="" id="sortOrdr" />
+    <input type="hidden" name="tnOpinionBoardVO.opinionAnCn" value="" id="opinionAnCn" />
+    <input type="hidden" name="tnOpinionBoardVO.division_Re" value="" id="division_Re" />
+
+
+    <input type="hidden" name="opinionBoardSearchTO.ctgryAt" value="N" id="hCtgryAt" />
+    <input type="hidden" name="opinionBoardSearchTO.opinionAt" value="Y" id="hOpinionAt" />
+
+
+
+
+
+
+
+
+      <legend>질의 및 의견</legend>
+      <p><img src="/images/common/title/txt_qna.gif" alt="지원사업정보에 대한 문의나 의견을 이곳에 작성해 주시면, 비즈니스지원단 전문가가 성실하게 답변해 드립니다. 민원신청시에는 참여&소식에 있는 민원 신청을 이용하시기 바랍니다."/></p>
+
+      <!-- 질의/의견 등록 area -->
+      <dl class="opi_box_1">
+        <dt class="opi_dt1">
+          <select name="tnOpinionBoardVO.division" id="tnOpinionBoardVO.division" for="opinionCn" class="opi_select_1" title="질문과 의견중 선택하세요">
+            <option  title="질문" value="Q">질문</option>
+            <option  title="의견" value="O">의견</option>
+          </select>
+        </dt>
+        <dd class="fl">
+          <textarea name="tnOpinionBoardVO.opinionCn" cols="10" rows="10" onkeyup="javascript:checkLengthArea2(this, 4000);" class="opi_textarea h50" id="opinionCn" title="질의 및 의견을 쓰세요"></textarea>
+        </dd>
+        <dd class="opi_btn_ok" id="dupchk"><input type="image" src="/images/common/opi_btn_ok.gif" alt="확인" border="0" onclick="javascript:goRegist();return false;" /></dd>
+      </dl>
+      <!-- 질의/의견 등록 area : E -->
+
+    </fieldset>
+
+
+      <ul class="cb opi_g">
+        <li>등록된 질의 및 의견 목록이  없습니다.</li>
+      </ul>
+
+
+
+
+
+  </div>
+  <div class="opi_bot"></div><br />
+
+
+</div>
+
+
+<iframe name="opinionFr" width="0" height="0" class="hid" title="빈 프레임"></iframe>
+
+      <!--정책 질의/의견함 -->
+
+            <div>
+                <ul>
+
+
+
+
+
+
+
+
+
+                <li class="tr"><a href="/userPolicyInfoList.do?policyInfoSerchTO.lclasId=5000&amp;policyInfoSerchTO.mlsfcId=5100&amp;policyInfoSerchTO.sclasId=&amp;policyInfoSerchTO.division=1" onclick="javascript:go_List('1');return false;"><img src="/images/common/btn_b_list.gif" alt="목록" /></a></li>
+
+
+
+                </ul>
+            </div>
+
+      <!-- 화면 초기화 -->
+      <script type="text/javascript">
+      //<![CDATA[
+
+
+
+
+
+        init('policy');
+
+
+
+
+
+      //]]>
+      </script>
+
+
+      <!-- myview set cookie -->
+
+      <iframe src="/myViewCookieSet.do?cookie_name=policy_2012smbaa00000682&amp;cookie_val=2012%B3%E2%B5%B5+%C5%F5%C0%DA%BF%AC%B0%E8+%B8%E0%C5%E4%B8%B5+%C3%CA%B1%E2%B1%E2%BE%F7+%B1%E2%BC%FA%B0%B3%B9%DF%BB%E7%BE%F7+%BD%C3%C7%E0%B0%E8%C8%B9+" class="hid" title="빈프레임"></iframe>
+      <!-- //myview set cookie -->
+
+    </div>
+  </form>
+
+  <!--  footer Area +++ start -->
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <!-- end:print_div -->
+        </div>
+        <!-- end:contents -->
+        <div id="quickmenuwrap">
+
+          <!-- 빠른메뉴 -->
+          <h2 id="q_quick">빠른서비스</h2>
+
+          <!-- 빠른메뉴 -->
+          <div id="quickmenu" class="quickmenu">
+            <dl>
+              <dd><a href="/formDwlnd.do"><img src="/spi/img/common/quickmenu/quickmenu_img0.gif" alt="서식다운로드" /></a></dd>
+              <dd><a href="/ticker_intro.do"><img src="/spi/img/common/quickmenu/quickmenu_img1.gif" alt="지원사업정보티커" /></a></dd>
+              <!--
+              <dd><a href="http://sminfo.smba.go.kr/main.do" target="_blank" title="기업검색(새창열림)"><img src="/spi/img/common/quickmenu/quickmenu_img2.gif" alt="기업검색(새창열림)" /></a></dd>
+              <dd><a href="/wordDicList.do"><img src="/spi/img/common/quickmenu/quickmenu_img3.gif" alt="용어검색" /></a></dd>
+              -->
+              <dd><a href="http://blog.naver.com/bizinfou/" target="_blank" title="중소기업인의 가슴과 함께하는 비즈인포 블로그입니다(새창열림)"><img src="/spi/img/common/quickmenu/quickmenu_img4.gif" alt="중소기업인의 가슴과 함께하는 비즈인포 블로그입니다(새창열림)" /></a></dd>
+              <dd><a href="http://www.facebook.com/bizinfo" target="_blank" title="페이스북(새창열림)"><img src="/spi/img/common/quickmenu/quickmenu_img10.gif" alt="페이스북(새창열림)" /></a></dd>
+              <!-- <dd><a href="/" target="_blank" title="카페(새창열림)"><img src="/spi/img/common/quickmenu/quickmenu_img9.gif" alt="카페(새창열림)" /></a></dd> -->
+              <dd><a href="/userEmploymentList.do?employmentSearchTO.division=1" title="채용정보"><img src="/spi/img/common/quickmenu/quickmenu_img5.gif" alt="채용정보" /></a></dd>
+              <dd><a href="/myViewList.do?popUp=Y" target="_blank" onclick="window.open(this.href, 'myview', 'status=no,scrollbars=yes,resizable=no,width=690,height=620,left=150,top=100');return false;" title="내가본 정보(새창열림)"><img src="/spi/img/common/quickmenu/quickmenu_img6.gif" alt="내가본 정보(새창열림)" /></a></dd>
+              <dd><a href="http://m.bizinfo.go.kr" target="_blank" onclick="window.open(this.href, 'mbizinfo', '');return false;" title="Bizinfo 모바일 웹(새창열림)"><img src="/spi/img/common/quickmenu/quickmenu_qr.gif" alt="Bizinfo 모바일 웹(새창열림)" /></a></dd>
+              <dd><img src="/spi/img/common/quickmenu/quickmenu_img7.gif" alt="중소기업청 상담센터 1357 09:00~18:30 공휴일제외 운영(새창열림)" /></dd>
+              <dd><a href="http://9988law.com/" target="_blank" title="중소기업법률지원단 9988(새창열림)"><img src="/spi/img/common/quickmenu/9988.gif" alt="중소기업법률지원단 9988(새창열림)" /></a></dd>
+            </dl>
+          </div>
+          <div class="clearboth"></div>
+
+          <!-- 빠른메뉴 : E -->
+
+        </div>
+        <div class="clearboth"></div>
+        <!-- end:quickmenuwrap -->
+    </div>
+    <!-- end:containerSub from bottom_new.jsp -->
+
+    <script type="text/javascript">
+      //<![CDATA[
+
+      new Floating(document.getElementById("quickmenu"),5,15,30,10,true);
+
+      //]]>
+    </script>
+
+
+</div>
+<!-- end:containerMainWrap -->
+
+  <!-- footerWrap -->
+  <script type="text/javascript">
+  //<![CDATA[
+    function goIsafe(window) {
+      open (window,"NewWindow","left=0, top=0, toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=yes, width=500, height=720");
+    }
+
+    // 뉴스레터, 이메일, 모바일 신청
+    function goSubs(address) {
+      thisForm = document.mainForm;
+
+      if('' == "") {
+        alert("로그인후에 이용이 가능합니다.");
+        thisForm.action = "/login.do";
+        thisForm.submit();
+      }else{
+
+        alert("비즈인포 일반회원에게만 제공되는 서비스 입니다.");
+
+      }
+    }
+  //]]>
+  </script>
+
+
+  <form name="mainForm" method="post" action="/index.do">
+  <input type="hidden" name="vtUserInfoVO.mber_Id" value="">
+  <input type="hidden" name="vtUserInfoVO.passwordCn" value="">
+  </form>
+
+  <div id="footerWrap" >
+    <h2 id="q_footer">바닥글</h2>
+    <div id="footer">
+        <!-- 메뉴 -->
+        <ul class="menu">
+        <li><a href="/guide.do"><img src="/spi/img/common/footer/footer_img1.gif" alt="이용안내" /></a></li>
+        <li><a href="/privacy.do"><img src="/spi/img/common/footer/footer_img2.gif" alt="개인정보보호정책" /></a></li>
+        <li><a href="/emailreject.do"><img src="/spi/img/common/footer/footer_img3.gif" alt="이메일무단수집거부" /></a></li>
+        <li><a href="/datacpyrht.do"><img src="/spi/img/common/footer/footer_img4.gif" alt="자료이용 및 저작권 보호" /></a></li>
+        <li><a href="mailto:1357@smba.go.kr"><img src="/spi/img/common/footer/footer_img5.gif" alt="운영자에게" /></a></li>
+        <li><a href="/spi_map.do"><img src="/spi/img/common/footer/footer_img6.gif" alt="찾아오시는 길" /></a></li>
+        <li><a href="/viewerdown.do"><img src="/spi/img/common/footer/footer_img13.gif" alt="뷰어다운로드" /></a></li>
+        <li><a href="/spi/jsp/spt/userguidance/web.jsp"><img src="/spi/img/common/footer/footer_img14.gif" alt="웹접근성정책" /></a></li>
+        <li><img src="/spi/img/common/footer/footer_img7.gif" alt="" /></li>
+        <li><a href="/newletter.do" onclick="javascript:goSubs('newletter');return false;"><img src="/spi/img/common/footer/footer_img8.gif" alt="뉴스레터 신청" /></a></li>
+        <li><a href="/emailservice.do" onclick="javascript:goSubs('emailservice');return false;"><img src="/spi/img/common/footer/footer_img9.gif" alt="이메일 신청" /></a></li>
+        <li><a href="/smsservice.do" onclick="javascript:goSubs('smsservice');return false;"><img src="/spi/img/common/footer/footer_img10.gif" alt="모바일 신청" /></a></li>
+
+        <li><a href="/spi/jsp/spt/popup/bizinfo_isafe.jsp" target="_blank" onclick="javascript:goIsafe('/spi/jsp/spt/popup/webwatch.jsp');return false;" title="웹접근성우수사이트인증마크(WA인증마크)(새창열림)"><img src="/spi/img/common/footer/footer_img15.gif" alt="웹접근성우수사이트인증마크(WA인증마크)(새창열림)" /></a></li>
+        <li><a href="/spi/jsp/spt/popup/bizinfo_isafe.jsp" target="_blank" onclick="javascript:goIsafe('/spi/jsp/spt/popup/bizinfo_isafe.jsp');return false;" title="안전마크(새창열림)"><img src="/spi/img/common/footer/footer_img11.gif" alt="안전마크(새창열림)" /></a></li>
+        <li><a href="/spi/jsp/spt/popup/bizinfo_privacy.jsp" target="_blank" onclick="javascript:goIsafe('/spi/jsp/spt/popup/bizinfo_privacy.jsp');return false;" title="개인정보보호마크(새창열림)"><img src="/spi/img/common/footer/footer_img12.gif" alt="개인정보보호마크(새창열림)" /></a></li>
+        </ul>
+
+        <div style="padding:40px 0 10px 0;" >
+          <span>  <img src="/spi/img/common/footer/logo_smba_1.gif" alt="중소기업청"  /></span>
+          <span> <img src="/spi/img/common/footer/address1_1.gif" alt="302-701 대전광역시 서구 청사로 189(둔산동)1동 tel.국번없이 1357 fax.042-472-6083 Copyright@2009 all rights reserved." /></span>
+          <span><img src="/spi/img/common/footer/logo_tipa_1.gif" alt="TIPA 중소기업기술정보진흥원 " style="padding:0 5px 0 20px;" /></span>
+          <span><img src="/spi/img/common/footer/address2_1.gif" alt="150-969 서울특별시 영등포구 은행로3 익스콘벤처타워 3층  tel. 02-3787-0652 fax. 02-2168-0235 e-mail. bizinfo@tipa.or.kr" /></span>
+        </div>
+    </div>
+  </div>
+  <!-- footerWrap : E -->
+
+</div>
+<!-- wrap : E -->
+
+
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript' type="text/javascript">
+//<![CDATA[
+if(typeof _GUL == 'undefined'){
+var _GUL = 'bizinfo.loginside.co.kr';var _GPT='8001'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+//]]>
+</script>
+<noscript><img src='http://bizinfo.loginside.co.kr:8001/?uid=1&amp;je=n&amp;' border="0" width="0" height="0" alt="" /></noscript>
+<!-- AceCounter Log Gathering Script End -->
+
+
+<!-- //Footer Area 1-->
+
+  <!--  footer Area +++ end -->
+
+  <!-- 리포트2.0 로그분석코드 시작 -->
+  <script type="text/javascript">
+  //<![CDATA[
+  var JsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+  var uname = escape("비즈인포");
+  document.write(unescape("%3Cscript id='log_script' src='" + JsHost + "bwhitewater.weblog.cafe24.com/weblog.js?uid=bwhitewater_1&amp;uname="+uname+"' type='text/javascript'%3E%3C/script%3E"));
+  //]]>
+  </script>
+  <!-- 리포트2.0  로그분석코드 완료 -->
+
+</body>
+</html>

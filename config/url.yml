@@ -1,2 +1,3 @@
 bizinfo:
     venture: 'http://www.bizinfo.go.kr/userPolicyInfoList.do?policyInfoSerchTO.lclasId=5000'
+    financial: 'http://www.bizinfo.go.kr/userPolicyInfoList.do?policyInfoSerchTO.lclasId=1000'

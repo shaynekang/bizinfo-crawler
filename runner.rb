@@ -14,3 +14,12 @@ get '/venture' do
   crawler.crawl(board, URLInfo.get('venture'))
   RSSBuilder.build(board)
 end
+
+get '/financial' do
+  board = Board.new
+  board.url = "http://www.bizinfo.go.kr"
+
+  crawler = Crawler.new
+  crawler.crawl(board, URLInfo.get('financial'))
+  RSSBuilder.build(board)
+end

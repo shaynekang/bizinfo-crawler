@@ -26,8 +26,8 @@ describe RSSBuilder do
       rss = RSSBuilder.build(board)
 
       feed = RSS::Parser.parse(rss)
-      feed.channel.title.should == "비즈인포 창업/벤처 RSS"
-      feed.channel.description.should == "비즈인포 창업/벤처 게시판의 RSS리스트입니다."
+      feed.channel.title.should == "Bizinfo's venture and finantial RSS"
+      feed.channel.description.should == "Rss of Bizinfo's venture and finantial forum."
       feed.items.count.should == 1
       feed.items.each do |item|
         item.title.should == "[John Doe]First Article"

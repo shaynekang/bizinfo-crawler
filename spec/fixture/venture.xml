@@ -5,9 +5,9 @@
   xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
   xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>비즈인포 창업/벤처 RSS</title>
+    <title>Bizinfo's venture and finantial RSS</title>
     <link>userPolicyInfoList.do?policyInfoSerchTO.lclasId=5000</link>
-    <description>비즈인포 창업/벤처 게시판의 RSS리스트입니다.</description>
+    <description>Rss of Bizinfo's venture and finantial forum.</description>
     <item>
       <title>[대전경제통..][대전] 대학생ㆍ청년창업 500 프로젝트사업</title>
       <link>spec/fixture/venture_item.html</link>
